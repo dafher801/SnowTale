@@ -1,0 +1,1249 @@
+﻿Log file open, 03/29/22 03:42:09
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: SnowTale
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 1.551625
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +9:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogXGEController: Cleaning working directory: C:/Users/USER/AppData/Local/Temp/UnrealXGEWorkingDir/
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.26-CL-15973114
+LogInit: Engine Version: 4.26.2-15973114+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz, GPU: NVIDIA GeForce GTX 970
+LogInit: Compiled (64-bit): Apr 12 2021 06:14:10
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line: 
+LogInit: Base Directory: D:/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:346][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.03.28-18.42.11:346][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:346][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:377][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.28-18.42.11:377][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.28-18.42.11:378][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.28-18.42.11:378][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.03.28-18.42.11:378][  0]LogHAL: Display: Platform has ~ 16 GB [17110216704 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.03.28-18.42.11:378][  0]LogInit: Going up to parent DeviceProfile []
+[2022.03.28-18.42.11:378][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.03.28-18.42.11:378][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.03.28-18.42.11:379][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Scalability.ini]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.03.28-18.42.11:380][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Engine.ini]
+[2022.03.28-18.42.11:380][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/Unreal Projects/SnowTale/Saved/Config/Windows/Editor.ini]
+[2022.03.28-18.42.11:380][  0]LogInit: Computer: DESKTOP-LVLVRD5
+[2022.03.28-18.42.11:380][  0]LogInit: User: USER
+[2022.03.28-18.42.11:380][  0]LogInit: CPU Page size=4096, Cores=4
+[2022.03.28-18.42.11:380][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.03.28-18.42.11:380][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.03.28-18.42.11:380][  0]LogMemory: Platform Memory Stats for Windows
+[2022.03.28-18.42.11:380][  0]LogMemory: Process Physical Memory: 131.17 MB used, 131.18 MB peak
+[2022.03.28-18.42.11:380][  0]LogMemory: Process Virtual Memory: 112.08 MB used, 112.08 MB peak
+[2022.03.28-18.42.11:380][  0]LogMemory: Physical Memory: 5037.55 MB used,  11280.02 MB free, 16317.57 MB total
+[2022.03.28-18.42.11:380][  0]LogMemory: Virtual Memory: 134207656.00 MB used,  10071.55 MB free, 134217728.00 MB total
+[2022.03.28-18.42.11:395][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.03.28-18.42.11:609][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.03.28-18.42.11:610][  0]LogInit: Using OS detected language (ko-KR).
+[2022.03.28-18.42.11:610][  0]LogInit: Using OS detected locale (ko-KR).
+[2022.03.28-18.42.11:613][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2022.03.28-18.42.11:966][  0]LogInit: Setting process to per monitor DPI aware
+[2022.03.28-18.42.12:008][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.03.28-18.42.12:142][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.03.28-18.42.12:142][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.03.28-18.42.12:687][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.03.28-18.42.12:687][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.03.28-18.42.12:687][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.03.28-18.42.12:687][  0]LogD3D11RHI: D3D11 adapters:
+[2022.03.28-18.42.12:816][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2022.03.28-18.42.12:816][  0]LogD3D11RHI:       4043/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2022.03.28-18.42.12:856][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.03.28-18.42.12:856][  0]LogD3D11RHI:       0/0/8158 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.03.28-18.42.12:856][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2022.03.28-18.42.12:865][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.03.28-18.42.12:865][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2022.03.28-18.42.12:865][  0]LogWindows: EnumDisplayDevices:
+[2022.03.28-18.42.12:865][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2022.03.28-18.42.12:867][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2022.03.28-18.42.12:868][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2022.03.28-18.42.12:869][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2022.03.28-18.42.12:870][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.03.28-18.42.12:870][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2022.03.28-18.42.12:870][  0]LogD3D11RHI:   Driver Version: 442.50 (internal:26.21.14.4250, unified:442.50)
+[2022.03.28-18.42.12:870][  0]LogD3D11RHI:      Driver Date: 2-24-2020
+[2022.03.28-18.42.12:870][  0]LogRHI: Texture pool is 2830 MB (70% of 4043 MB)
+[2022.03.28-18.42.12:935][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.03.28-18.42.12:935][  0]LogD3D11RHI: Async texture creation enabled
+[2022.03.28-18.42.12:935][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.03.28-18.42.12:955][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2022.03.28-18.42.12:957][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.03.28-18.42.13:632][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.03.28-18.42.13:659][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.03.28-18.42.13:692][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.03.28-18.42.13:692][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.03.28-18.42.13:746][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.03.28-18.42.13:759][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2022.03.28-18.42.13:772][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.03.28-18.42.13:785][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.03.28-18.42.13:800][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2022.03.28-18.42.13:813][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2022.03.28-18.42.13:826][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2022.03.28-18.42.13:860][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2022.03.28-18.42.13:860][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2022.03.28-18.42.13:872][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2022.03.28-18.42.13:890][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2022.03.28-18.42.13:903][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2022.03.28-18.42.13:915][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2022.03.28-18.42.13:935][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.03.28-18.42.13:935][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.03.28-18.42.13:948][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.03.28-18.42.13:962][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.03.28-18.42.13:975][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.03.28-18.42.13:989][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.03.28-18.42.13:989][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.03.28-18.42.14:053][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.03.28-18.42.14:594][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.03.28-18.42.14:594][  0]LogShaderCompilers: Guid format shader working directory is 8 characters bigger than the processId version (../../../../Unreal Projects/SnowTale/Intermediate/Shaders/WorkingDirectory/22972/).
+[2022.03.28-18.42.14:595][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/USER/AppData/Local/Temp/UnrealShaderWorkingDir/E7FA86F64892915737549FA4EFD3571C/'.
+[2022.03.28-18.42.14:595][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.03.28-18.42.14:595][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.03.28-18.42.17:455][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.03.28-18.42.18:481][  0]LogDerivedDataCache: Loaded boot cache 1.03s 77MB C:/Users/USER/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.28-18.42.18:481][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/USER/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2022.03.28-18.42.18:481][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../Unreal Projects/SnowTale/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.03.28-18.42.18:482][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.03.28-18.42.18:482][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../Unreal Projects/SnowTale/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.28-18.42.18:482][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.03.28-18.42.18:597][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.03.28-18.42.18:597][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.03.28-18.42.18:597][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.03.28-18.42.18:805][  0]LogDerivedDataCache: Speed tests for C:/Users/USER/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.21 seconds
+[2022.03.28-18.42.18:807][  0]LogDerivedDataCache: Display: Performance to C:/Users/USER/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.11ms. RandomReadSpeed=4.78MBs, RandomWriteSpeed=76.46MBs. Assigned SpeedClass 'Local'
+[2022.03.28-18.42.18:808][  0]LogDerivedDataCache: Using Local data cache path C:/Users/USER/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.03.28-18.42.18:808][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.03.28-18.42.18:808][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.03.28-18.42.18:865][  0]LogSlate: Using FreeType 2.10.0
+[2022.03.28-18.42.18:865][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.03.28-18.42.19:101][  0]LogAssetRegistry: FAssetRegistry took 0.0030 seconds to start up
+[2022.03.28-18.42.19:346][  0]LogInit: Selected Device Profile: [Windows]
+[2022.03.28-18.42.19:346][  0]LogInit: Active device profile: [0000019A68977300][0000019A62D29900 49] Windows
+[2022.03.28-18.42.19:346][  0]LogInit: Profiles: [0000019A68977300][0000019A62D29900 49] Windows, [0000019A68944E00][0000019A62713A80 49] WindowsNoEditor, [0000019A68974E00][0000019A62717C00 49] WindowsServer, [0000019A68946E00][0000019A4A6200C0 49] WindowsClient, [0000019A68976D00][0000019A4A624240 49] IOS, [0000019A68945500][0000019A4A6283C0 49] iPadAir, [0000019A68975500][0000019A4A62C540 49] iPadAir2, [0000019A68904B00][0000019A4A634800 49] IPadPro, [0000019A68904C00][0000019A4A630840 49] iPadAir3, [0000019A68976A00][0000019A4A6389C0 49] iPadAir4, [0000019A68907600][0000019A69718B40 49] iPadMini2, [0000019A68975600][0000019A6971CCC0 49] iPadMini3, [0000019A68904F00][0000019A69720E40 49] iPadMini4, [0000019A68977100][0000019A69724FC0 49] iPadMini5, [0000019A68946700][0000019A6972D280 49] iPhone6, [0000019A68946600][0000019A697292C0 49] iPodTouch6, [0000019A68907100][0000019A69735580 49] iPhone7, [0000019A68906E00][0000019A697315C0 49] iPodTouch7, [0000019A68947F00][0000019A62D2D700 49] iPhone5S, [0000019A68907A00][0000019A69739840 49] iPhone6Plus, [0000019A68945600][0000019A6973D980 49] iPhone6S, [0000019A68906C00][0000019A69741AC0 49] iPhone6SPlus, [0000019A68947C00][0000019A69749C40 49] iPhone7Plus, [0000019A68906400][0000019A6974C100 49] iPhoneSE, [0000019A68946B00][0000019A69750280 49] iPhone8, [0000019A68905100][0000019A69754400 49] iPhone8Plus, [0000019A68944F00][0000019A69758580 49] iPhoneX, [0000019A68905D00][0000019A6975C700 49] iPhoneXS, [0000019A68944900][0000019A69770880 49] iPhoneXSMax, [0000019A68905600][0000019A69774A00 49] iPhoneXR, [0000019A68944300][0000019A69778B80 49] iPhone11, [0000019A68905900][0000019A6977CD00 49] iPhone11Pro, [0000019A68944600][0000019A69780E80 49] iPhone11ProMax, [0000019A68905E00][0000019A69785000 49] iPhoneSE2, [0000019A68947500][0000019A69789180 49] iPhone12Mini, [0000019A68905800][0000019A6978D300 49] iPhone12, [0000019A68944800][0000019A69791480 49] iPhone12Pro, [0000019A68907700][0000019A69795600 49] iPhone12ProMax, [0000019A68944C00][0000019A69745740 49] iPadPro105, [0000019A68906A00][0000019A69799880 49] iPadPro129, [0000019A68947900][0000019A6979D9C0 49] iPadPro97, [0000019A68904700][0000019A697A1B00 49] iPadPro2_129, [0000019A68945400][0000019A697A9C80 49] iPad5, [0000019A68906500][0000019A697AC140 49] iPad6, [0000019A68946C00][0000019A697B02C0 49] iPad7, [0000019A68905200][0000019A697B4440 49] iPad8, [0000019A68947700][0000019A697B85C0 49] iPadPro11, [0000019A68905500][0000019A697BC740 49] iPadPro2_11, [0000019A68945000][0000019A697C08C0 49] iPadPro3_129, [0000019A68906700][0000019A697C4A40 49] iPadPro4_129, [0000019A68945A00][0000019A697C8BC0 49] AppleTV, [0000019A68904500][0000019A697CCD40 49] AppleTV4K, [0000019A68947800][0000019A697D0EC0 49] TVOS, [0000019A68906300][0000019A697D5040 49] Mac, [0000019A68946500][0000019A697D91C0 49] MacClient, [0000019A68904600][0000019A697DD340 49] MacNoEditor, [0000019A68975200][0000019A697E14C0 49] MacServer, [0000019A689D8600][0000019A697E5640 49] Linux, [0000019A68974C00][0000019A697E97C0 49] LinuxAArch64, [0000019A689D8E00][0000019A697A5900 49] LinuxNoEditor, [0000019A68977B00][0000019A697EDA40 49] LinuxAArch64NoEditor, [0000019A689D9200][0000019A697F1B80 49] LinuxClient, [0000019A68975A00][0000019A697F9D00 49] LinuxAArch64Client, [0000019A689D9300][0000019A697FC1C0 49] LinuxServer, [0000019A68976000][0000019A69800340 49] LinuxAArch64Server, [0000019A689D9100][0000019A698044C0 49] Android, [0000019A68975B00][0000019A69808640 49] Android_Low, [0000019A68907B00][0000019A6980C7C0 49] Android_Mid, [0000019A68976900][0000019A69810940 49] Android_High, [0000019A68906800][0000019A69814AC0 49] Android_Default, [0000019A68975D00][0000019A69818C40 49] Android_Adreno4xx, [0000019A68907400][0000019A6981CDC0 49] Android_Adreno5xx_Low, [0000019A68974D00][0000019A5D7CCF40 49] Android_Adreno5xx, [0000019A68904100][0000019A5D7D10C0 49] Android_Adreno6xx, [0000019A68976800][0000019A5D7D5240 49] Android_Adreno6xx_Vulkan, [0000019A68904800][0000019A5D7D93C0 49] Android_Mali_T6xx, [0000019A68977000][0000019A5D7DD540 49] Android_Mali_T7xx, [0000019A68905A00][0000019A5D7E16C0 49] Android_Mali_T8xx, [0000019A68976B00][0000019A5D7E5840 49] Android_Mali_G71, [0000019A68904900][0000019A697F5980 49] Android_Mali_G72, [0000019A68974300][0000019A5D7E9AC0 49] Android_Mali_G72_Vulkan, [0000019A68907800][0000019A5D7EDC00 49] Android_Mali_G76, [0000019A68976200][0000019A5D7F40C0 49] Android_Mali_G76_Vulkan, [0000019A68904A00][0000019A69820240 49] Android_Mali_G77, [0000019A68977800][0000019A698243C0 49] Android_Mali_G77_Vulkan, [0000019A68905300][0000019A69828540 49] Android_Vulkan_SM5, [0000019A68977500][0000019A6982C6C0 49] Android_PowerVR_G6xxx, [0000019A68907D00][0000019A69830840 49] Android_PowerVR_GT7xxx, [0000019A68976300][0000019A698349C0 49] Android_PowerVR_GE8xxx, [0000019A68905F00][0000019A69838B40 49] Android_PowerVR_GM9xxx, [0000019A68974900][0000019A6983CCC0 49] Android_PowerVR_GM9xxx_Vulkan, [0000019A68904200][0000019A69840E40 49] Android_TegraK1, [0000019A68976500][0000019A69844FC0 49] Android_Unknown_Vulkan, [0000019A68906900][0000019A69849140 49] Lumin, [0000019A6893BE00][0000019A6984D2C0 49] Lumin_Desktop, [0000019A68975E00][0000019A69851440 49] HoloLens, 
+[2022.03.28-18.42.19:860][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.03.28-18.42.19:860][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.03.28-18.42.19:860][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.03.28-18.42.19:860][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.03.28-18.42.19:860][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.03.28-18.42.19:886][  0]LogNetVersion: SnowTale 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 1908065624)
+[2022.03.28-18.42.27:379][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.03.28-18.42.27:501][  0]LogPackageLocalizationCache: Processed 22 localized package path(s) for 1 prioritized culture(s) in 0.121865 seconds
+[2022.03.28-18.42.27:508][  0]LogUObjectArray: 16831 objects as part of root set at end of initial load.
+[2022.03.28-18.42.27:508][  0]LogUObjectAllocator: 4209728 out of 0 bytes used by permanent object pool.
+[2022.03.28-18.42.27:508][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.03.28-18.42.29:992][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.03.28-18.42.30:024][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.03.28-18.42.30:434][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.28-18.42.30:434][  0]LogLinker: Warning: '{FileName}': 파일을 찾을 수 없습니다. 로드에 실패했습니다.
+[2022.03.28-18.42.30:434][  0]LogUObjectGlobals: Warning: 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C' 오브젝트를 찾는 데 실패했습니다.
+[2022.03.28-18.42.30:545][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.28-18.42.30:545][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.28-18.42.30:566][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.28-18.42.30:608][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.28-18.42.30:655][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.28-18.42.30:669][  0]LogUProjectInfo: Found projects:
+[2022.03.28-18.42.31:837][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.03.28-18.42.31:881][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.28-18.42.31:881][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.03.28-18.42.32:165][  0]LogCollectionManager: Loaded 0 collections in 0.000886 seconds
+[2022.03.28-18.42.32:201][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/SnowTale/Saved/Collections/' took 0.00s
+[2022.03.28-18.42.32:201][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/SnowTale/Content/Developers/USER/Collections/' took 0.00s
+[2022.03.28-18.42.32:201][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/SnowTale/Content/Collections/' took 0.00s
+[2022.03.28-18.42.32:201][  0]LogOcInput: OculusInput pre-init called
+[2022.03.28-18.42.32:273][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2022.03.28-18.42.32:273][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2022.03.28-18.42.32:386][  0]LogEngine: Initializing Engine...
+[2022.03.28-18.42.32:388][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.03.28-18.42.32:388][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2022.03.28-18.42.32:389][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2022.03.28-18.42.32:522][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.03.28-18.42.32:564][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.03.28-18.42.32:565][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.03.28-18.42.32:572][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.03.28-18.42.32:572][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.28-18.42.32:572][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.28-18.42.32:572][  0]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.28-18.42.32:572][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.28-18.42.32:660][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.28-18.42.32:660][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.03.28-18.42.32:763][  0]LogAudioMixer: Display: Using Audio Device 스피커(USBFC1)
+[2022.03.28-18.42.32:770][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.28-18.42.32:772][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.28-18.42.32:772][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.28-18.42.32:774][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.28-18.42.32:774][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.28-18.42.32:774][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.28-18.42.32:775][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.28-18.42.32:775][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.28-18.42.32:775][  0]LogInit: FAudioDevice initialized.
+[2022.03.28-18.42.32:775][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.03.28-18.42.32:775][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.03.28-18.42.32:981][  0]LogDerivedDataCache: Saved boot cache 0.20s 77MB C:/Users/USER/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.03.28-18.42.32:986][  0]LogInit: Texture streaming: Enabled
+[2022.03.28-18.42.33:010][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.2-15973114+++UE4+Release-4.26
+[2022.03.28-18.42.33:023][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.03.28-18.42.33:023][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=Crashed, SessionId={1BB7D3C9-49F8-F751-47EE-18AFEC600FF2}
+[2022.03.28-18.42.33:023][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2022.03.28-18.42.33:045][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2022.03.28-18.42.33:139][  0]LogInit: Transaction tracking system initialized
+[2022.03.28-18.42.33:365][  0]BlueprintLog: New page: 에디터 로드
+[2022.03.28-18.42.34:037][  0]LocalizationService: 현지화 서비스가 비활성화되었습니다.
+[2022.03.28-18.42.34:574][  0]TimingProfiler: Initialize
+[2022.03.28-18.42.34:574][  0]TimingProfiler: OnSessionChanged
+[2022.03.28-18.42.34:574][  0]LoadingProfiler: Initialize
+[2022.03.28-18.42.34:574][  0]LoadingProfiler: OnSessionChanged
+[2022.03.28-18.42.34:574][  0]NetworkingProfiler: Initialize
+[2022.03.28-18.42.34:574][  0]NetworkingProfiler: OnSessionChanged
+[2022.03.28-18.42.34:574][  0]MemoryProfiler: Initialize
+[2022.03.28-18.42.34:574][  0]MemoryProfiler: OnSessionChanged
+[2022.03.28-18.42.35:643][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2022.03.28-18.42.35:644][  0]LogCook: Display: Mobile HDR setting 1
+[2022.03.28-18.42.36:364][  0]LogFileCache: Scanning file cache for directory 'D:/Unreal Projects/SnowTale/Content/' took 0.00s
+[2022.03.28-18.42.37:302][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.03.28-18.42.37:322][  0]SourceControl: 소스 컨트롤이 꺼졌습니다.
+[2022.03.28-18.42.37:323][  0]LogUnrealEdMisc: Loading editor; pre map load, took 30.062
+[2022.03.28-18.42.37:323][  0]Cmd: MAP LOAD FILE="../../../../Unreal Projects/SnowTale/Content/Maps/SampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.03.28-18.42.37:323][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.28-18.42.37:340][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.42.37:340][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.42.37:340][  0]MapCheck: New page: 맵 체크
+[2022.03.28-18.42.37:340][  0]LightingResults: New page: 라이팅 빌드
+[2022.03.28-18.42.37:349][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2022.03.28-18.42.37:968][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'SampleMap'.
+[2022.03.28-18.42.37:971][  0]LogAIModule: Creating AISystem for world SampleMap
+[2022.03.28-18.42.37:979][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.03.28-18.42.37:991][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2022.03.28-18.42.37:991][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.03.28-18.42.37:991][  0]MapCheck: 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 0.133ms.
+[2022.03.28-18.42.37:991][  0]LogFileHelpers: Loading map 'SampleMap' took 0.668
+[2022.03.28-18.42.38:001][  0]LogUnrealEdMisc: Total Editor Startup Time, took 30.740
+[2022.03.28-18.42.38:309][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.42.38:316][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.42.38:322][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.42.38:329][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.42.38:375][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0098 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-18.42.38:392][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2022.03.28-18.42.38:445][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.28-18.42.38:445][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:445][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.28-18.42.38:445][  0]LogPakFile: OnPakFileMounted2Time == 0.000009
+[2022.03.28-18.42.38:448][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.28-18.42.38:448][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:449][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.28-18.42.38:449][  0]LogPakFile: OnPakFileMounted2Time == 0.000011
+[2022.03.28-18.42.38:463][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2022.03.28-18.42.38:463][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:463][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2022.03.28-18.42.38:463][  0]LogPakFile: OnPakFileMounted2Time == 0.000014
+[2022.03.28-18.42.38:498][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.28-18.42.38:498][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:498][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.28-18.42.38:498][  0]LogPakFile: OnPakFileMounted2Time == 0.000018
+[2022.03.28-18.42.38:514][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.28-18.42.38:514][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:514][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.28-18.42.38:514][  0]LogPakFile: OnPakFileMounted2Time == 0.000022
+[2022.03.28-18.42.38:522][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.28-18.42.38:522][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:522][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.28-18.42.38:522][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
+[2022.03.28-18.42.38:530][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.28-18.42.38:530][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:530][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.28-18.42.38:530][  0]LogPakFile: OnPakFileMounted2Time == 0.000029
+[2022.03.28-18.42.38:539][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.28-18.42.38:539][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:539][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.28-18.42.38:539][  0]LogPakFile: OnPakFileMounted2Time == 0.000032
+[2022.03.28-18.42.38:557][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.28-18.42.38:557][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:557][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.28-18.42.38:557][  0]LogPakFile: OnPakFileMounted2Time == 0.000036
+[2022.03.28-18.42.38:572][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.03.28-18.42.38:572][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:572][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.03.28-18.42.38:572][  0]LogPakFile: OnPakFileMounted2Time == 0.000040
+[2022.03.28-18.42.38:580][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.03.28-18.42.38:580][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:580][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.03.28-18.42.38:580][  0]LogPakFile: OnPakFileMounted2Time == 0.000045
+[2022.03.28-18.42.38:587][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.28-18.42.38:587][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:587][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.28-18.42.38:587][  0]LogPakFile: OnPakFileMounted2Time == 0.000047
+[2022.03.28-18.42.38:593][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.28-18.42.38:593][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:593][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.28-18.42.38:593][  0]LogPakFile: OnPakFileMounted2Time == 0.000051
+[2022.03.28-18.42.38:600][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.28-18.42.38:601][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:601][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.28-18.42.38:601][  0]LogPakFile: OnPakFileMounted2Time == 0.000054
+[2022.03.28-18.42.38:610][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.03.28-18.42.38:610][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:610][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.03.28-18.42.38:610][  0]LogPakFile: OnPakFileMounted2Time == 0.000057
+[2022.03.28-18.42.38:618][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.28-18.42.38:619][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:619][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.28-18.42.38:619][  0]LogPakFile: OnPakFileMounted2Time == 0.000060
+[2022.03.28-18.42.38:632][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.03.28-18.42.38:632][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:632][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.03.28-18.42.38:632][  0]LogPakFile: OnPakFileMounted2Time == 0.000063
+[2022.03.28-18.42.38:642][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.28-18.42.38:642][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:642][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.28-18.42.38:642][  0]LogPakFile: OnPakFileMounted2Time == 0.000067
+[2022.03.28-18.42.38:651][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.28-18.42.38:651][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:651][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.28-18.42.38:651][  0]LogPakFile: OnPakFileMounted2Time == 0.000070
+[2022.03.28-18.42.38:664][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.28-18.42.38:664][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:664][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.28-18.42.38:664][  0]LogPakFile: OnPakFileMounted2Time == 0.000073
+[2022.03.28-18.42.38:671][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.03.28-18.42.38:671][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:672][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.03.28-18.42.38:672][  0]LogPakFile: OnPakFileMounted2Time == 0.000076
+[2022.03.28-18.42.38:674][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.03.28-18.42.38:674][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:674][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.03.28-18.42.38:674][  0]LogPakFile: OnPakFileMounted2Time == 0.000077
+[2022.03.28-18.42.38:695][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2022.03.28-18.42.38:695][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:695][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2022.03.28-18.42.38:695][  0]LogPakFile: OnPakFileMounted2Time == 0.000081
+[2022.03.28-18.42.38:729][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.03.28-18.42.38:729][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:729][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.03.28-18.42.38:729][  0]LogPakFile: OnPakFileMounted2Time == 0.000086
+[2022.03.28-18.42.38:743][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.03.28-18.42.38:743][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:743][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.03.28-18.42.38:744][  0]LogPakFile: OnPakFileMounted2Time == 0.000090
+[2022.03.28-18.42.38:775][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.03.28-18.42.38:775][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.03.28-18.42.38:775][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.03.28-18.42.38:775][  0]LogPakFile: OnPakFileMounted2Time == 0.000094
+[2022.03.28-18.42.40:146][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.28-18.42.40:151][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2022.03.28-18.42.40:294][  0]LogSlate: Took 0.000410 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.03.28-18.42.40:356][  0]LogSlate: Took 0.061476 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2022.03.28-18.42.40:396][  0]LogSlate: Took 0.039102 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicBold.ttf' (4188K)
+[2022.03.28-18.42.40:396][  0]LogSlate: Took 0.000222 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.03.28-18.42.40:409][  0]LogSlate: Took 0.009673 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.03.28-18.42.40:509][  0]LogRenderer: Reallocating scene render targets to support 1208x556 Format 10 NumSamples 1 (Frame:1).
+[2022.03.28-18.42.40:598][  0]LogSlate: Took 0.035067 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.28-18.42.40:922][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2022.03.28-18.42.40:922][  0]LogLoad: (Engine Initialization) Total time: 33.66 seconds
+[2022.03.28-18.42.40:922][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.03.28-18.42.40:922][  0]LogInit: First time updating LLM stats...
+[2022.03.28-18.42.40:964][  0]LogAssetRegistry: Asset discovery search completed in 21.8637 seconds
+[2022.03.28-18.42.40:966][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000004 seconds (updated 0 objects)
+[2022.03.28-18.42.41:004][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2022.03.28-18.42.44:530][396]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2022.03.28-18.42.44:538][396]Candidate modules for hot reload:
+[2022.03.28-18.42.44:538][396]  SnowTale
+[2022.03.28-18.42.44:538][396]Launching UnrealBuildTool... [D:/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SnowTale,9877 SnowTaleEditor Win64 Development -Project="D:/Unreal Projects/SnowTale/SnowTale.uproject" "D:/Unreal Projects/SnowTale/SnowTale.uproject"  -IgnoreJunk]
+[2022.03.28-18.42.44:545][396]Warning: Starting HotReload took  0.0s.
+[2022.03.28-18.42.49:083][859]CompilerResultsLog: New page: 컴파일 - 2022. 3. 29. 오후 12:42:49
+[2022.03.28-18.42.49:083][859]CompilerResultsLog: Building SnowTaleEditor...
+[2022.03.28-18.42.49:083][859]CompilerResultsLog: Using Visual Studio 2019 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.28-18.42.49:083][859]CompilerResultsLog: Building 3 actions with 4 processes...
+[2022.03.28-18.42.49:083][859]CompilerResultsLog:   [1/3] UE4Editor-SnowTale-9877.lib
+[2022.03.28-18.42.49:083][859]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-9877.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-9877.exp
+[2022.03.28-18.42.49:083][859]CompilerResultsLog:   [2/3] UE4Editor-SnowTale-9877.dll
+[2022.03.28-18.42.49:083][859]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-9877.suppressed.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-9877.suppressed.exp
+[2022.03.28-18.42.49:083][859]CompilerResultsLog:   [3/3] SnowTaleEditor.target
+[2022.03.28-18.42.49:083][859]CompilerResultsLog: Total time in Parallel executor: 3.03 seconds
+[2022.03.28-18.42.49:083][859]CompilerResultsLog: Total execution time: 4.39 seconds
+[2022.03.28-18.42.49:083][859]LogMainFrame: MainFrame: Module compiling took 4.553 seconds
+[2022.03.28-18.42.49:489][859]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0002 seconds. Added 9 classes and 2 folders.
+[2022.03.28-18.42.49:491][859]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-18.42.49:539][859]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0093 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-18.42.49:539][859]Display: HotReload took  5.0s.
+[2022.03.28-18.48.09:739][195]LogHotReload: New module detected: UE4Editor-SnowTale-0039.dll
+[2022.03.28-18.48.11:098][200]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.28-18.48.11:103][200]LogSlate: Took 0.000441 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2022.03.28-18.48.11:507][200]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0004 seconds. Added 9 classes and 2 folders.
+[2022.03.28-18.48.11:509][200]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-18.48.11:557][200]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0105 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-18.48.11:562][200]Display: HotReload took  0.5s.
+[2022.03.28-18.49.43:995][138]LogSlate: Window '부모 클래스 선택' being destroyed
+[2022.03.28-18.49.44:088][138]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.03.28-18.49.44:097][138]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.03.28-18.49.44:657][173]LogContentBrowser: Attempting asset rename: NewBlueprint -> NewBlueprint
+[2022.03.28-18.49.44:761][173]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.03.28-18.49.50:284][820]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_Bullet
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.BP_Bullet:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.SKEL_BP_Bullet_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.SKEL_BP_Bullet_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.BP_Bullet_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.BP_Bullet:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.BP_Bullet:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:411][820]LogMetaData: Removing '/Game/Blueprints/BP_Bullet.BP_Bullet:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.49.50:519][820]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Bullet" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_Bullet.uasset" SILENT=true
+[2022.03.28-18.49.50:714][820]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_BulletC4A860A943E3F1C7B7A2F39DAA0080FD.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_Bullet.uasset'
+[2022.03.28-18.49.50:821][820]LogUObjectHash: Compacting FUObjectHashTables data took   0.73ms
+[2022.03.28-18.49.50:837][820]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2022.03.28-18.49.50:843][820]LogUObjectHash: Compacting FUObjectHashTables data took   0.22ms
+[2022.03.28-18.49.50:903][820]AssetCheck: New page: 애셋 저장: BP_Bullet
+[2022.03.28-18.49.50:903][820]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_Bullet.BP_Bullet 유효성 검사
+[2022.03.28-18.49.51:633][899]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_Bullet.BP_Bullet
+[2022.03.28-18.49.52:407][899]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 126 classes and 0 folders.
+[2022.03.28-18.49.54:553][899]LogRenderer: Reallocating scene render targets to support 1208x692 Format 10 NumSamples 1 (Frame:1).
+[2022.03.28-18.49.55:925][ 11]LogSlate: Window 'BP_Bullet' being destroyed
+[2022.03.28-18.49.55:933][ 11]LogSlate: Window 'BP_Bullet' being destroyed
+[2022.03.28-18.49.55:951][ 11]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.49.55:951][ 11]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.49.58:007][210]LogSlate: Warning: Slate: Had to block on waiting for a draw buffer
+[2022.03.28-18.50.08:263][210]LogSlate: Window '부모 클래스 선택' being destroyed
+[2022.03.28-18.50.08:270][210]LogContentBrowser: Deferred new asset file creation: NewBlueprint
+[2022.03.28-18.50.08:281][210]LogContentBrowser: Creating deferred item: NewBlueprint
+[2022.03.28-18.50.08:850][270]LogContentBrowser: Attempting asset rename: NewBlueprint -> NewBlueprint
+[2022.03.28-18.50.08:854][270]LogContentBrowser: End creating deferred item NewBlueprint
+[2022.03.28-18.50.16:284][151]LogContentBrowser: Attempting asset rename: NewBlueprint -> BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.SKEL_BP_ST_SnowWhiteAttackSystem_C:UserConstructionScript' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.SKEL_BP_ST_SnowWhiteAttackSystem_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem_C' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:297][151]LogMetaData: Removing '/Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/NewBlueprint.PackageMetaData'
+[2022.03.28-18.50.16:313][151]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ST_SnowWhiteAttackSystem" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset" SILENT=true
+[2022.03.28-18.50.16:318][151]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_ST_SnowWhiteAttackSystem57D669814C7216317C0821AFE1952CFD.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset'
+[2022.03.28-18.50.16:458][151]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2022.03.28-18.50.16:484][151]LogUObjectHash: Compacting FUObjectHashTables data took   1.95ms
+[2022.03.28-18.50.16:501][151]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2022.03.28-18.50.16:530][151]AssetCheck: New page: 애셋 저장: BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.50.16:530][151]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem 유효성 검사
+[2022.03.28-18.50.18:414][374]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.50.20:863][532]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.28-18.50.23:923][842]BlueprintLog: New page: BP_ST_SnowWhiteAttackSystem 컴파일
+[2022.03.28-18.50.23:978][842]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2022.03.28-18.50.24:043][842]LogSlate: Took 0.008776 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2022.03.28-18.50.24:085][842]LogSlate: Took 0.041786 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/NanumGothicExtraBold.ttf' (4074K)
+[2022.03.28-18.50.24:649][897]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ST_SnowWhiteAttackSystem" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset" SILENT=true
+[2022.03.28-18.50.24:672][897]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_ST_SnowWhiteAttackSystemB55510034CAA1EAD9D0CC8BBDB9ABFB2.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset'
+[2022.03.28-18.50.24:702][897]AssetCheck: New page: 애셋 저장: BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.50.24:702][897]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem 유효성 검사
+[2022.03.28-18.50.25:180][941]LogSlate: Window 'BP_ST_SnowWhiteAttackSystem' being destroyed
+[2022.03.28-18.50.25:198][941]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.50.25:198][941]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.50.25:879][  2]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_Bullet.BP_Bullet
+[2022.03.28-18.50.28:295][195]LogSlate: Window 'BP_Bullet' being destroyed
+[2022.03.28-18.50.28:315][195]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.50.28:315][195]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.50.28:361][195]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_Bullet.BP_Bullet
+[2022.03.28-18.50.28:820][195]LogSlate: Took 0.014151 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2022.03.28-18.50.31:306][416]LogSlate: Took 0.000486 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2022.03.28-18.51.27:132][943]BlueprintLog: New page: BP_Bullet 컴파일
+[2022.03.28-18.51.27:226][943]LogUObjectHash: Compacting FUObjectHashTables data took   5.06ms
+[2022.03.28-18.51.27:632][973]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_Bullet" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_Bullet.uasset" SILENT=true
+[2022.03.28-18.51.27:642][973]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_BulletD8123649443C9F01669CF997CE870511.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_Bullet.uasset'
+[2022.03.28-18.51.27:663][973]AssetCheck: New page: 애셋 저장: BP_Bullet
+[2022.03.28-18.51.27:663][973]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_Bullet.BP_Bullet 유효성 검사
+[2022.03.28-18.51.31:105][347]LogSlate: Window 'BP_Bullet' being destroyed
+[2022.03.28-18.51.31:113][347]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.51.31:113][347]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.51.34:508][636]Candidate modules for hot reload:
+[2022.03.28-18.51.34:508][636]  SnowTale
+[2022.03.28-18.51.34:508][636]Launching UnrealBuildTool... [D:/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SnowTale,956 SnowTaleEditor Win64 Development -Project="D:/Unreal Projects/SnowTale/SnowTale.uproject" "D:/Unreal Projects/SnowTale/SnowTale.uproject"  -IgnoreJunk]
+[2022.03.28-18.51.34:516][636]Warning: Starting HotReload took  0.1s.
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog: New page: 컴파일 - 2022. 3. 29. 오후 12:51:38
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog: Building SnowTaleEditor...
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog: Using Visual Studio 2019 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog: Building 3 actions with 4 processes...
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog:   [1/3] UE4Editor-SnowTale-0956.lib
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-0956.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-0956.exp
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog:   [2/3] UE4Editor-SnowTale-0956.dll
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-0956.suppressed.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-0956.suppressed.exp
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog:   [3/3] SnowTaleEditor.target
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog: Total time in Parallel executor: 2.38 seconds
+[2022.03.28-18.51.38:507][ 69]CompilerResultsLog: Total execution time: 3.85 seconds
+[2022.03.28-18.51.38:507][ 69]LogMainFrame: MainFrame: Module compiling took 4.003 seconds
+[2022.03.28-18.51.38:525][ 69]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0107 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-18.51.38:525][ 69]Display: HotReload took  4.1s.
+[2022.03.28-18.51.40:481][228]LogUObjectHash: Compacting FUObjectHashTables data took   4.18ms
+[2022.03.28-18.51.41:786][341]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2022.03.28-18.51.42:658][440]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.28-18.51.42:668][440]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.28-18.51.42:668][440]PIE: New page: PIE 세션: SampleMap (2022. 3. 29. 오후 12:51:42)
+[2022.03.28-18.51.42:669][440]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2022.03.28-18.51.42:671][440]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2022.03.28-18.51.42:671][440]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-18.51.42:674][440]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002987s)
+[2022.03.28-18.51.42:676][440]LogAIModule: Creating AISystem for world SampleMap
+[2022.03.28-18.51.42:676][440]LogPlayLevel: PIE: World Init took: (0.001957s)
+[2022.03.28-18.51.42:676][440]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/SampleMap.SampleMap to /Game/Maps/UEDPIE_0_SampleMap.SampleMap (0.005157s)
+[2022.03.28-18.51.42:691][440]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2022.03.28-18.51.42:693][440]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.28-18.51.42:693][440]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.28-18.51.42:693][440]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.28-18.51.42:694][440]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.28-18.51.42:694][440]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.28-18.51.42:714][440]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.28-18.51.42:714][440]LogAudioMixer: Display: 1: FrontRight
+[2022.03.28-18.51.42:753][440]LogAudioMixer: Display: Using Audio Device 스피커(USBFC1)
+[2022.03.28-18.51.42:754][440]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.28-18.51.42:754][440]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.28-18.51.42:754][440]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.28-18.51.42:754][440]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.28-18.51.42:754][440]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.28-18.51.42:754][440]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.28-18.51.42:771][440]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.28-18.51.42:771][440]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.28-18.51.42:771][440]LogInit: FAudioDevice initialized.
+[2022.03.28-18.51.42:771][440]LogAudio: Display: Audio Device (ID: 2) registered with world 'SampleMap'.
+[2022.03.28-18.51.42:779][440]LogLoad: Game class is 'BP_ST_SnowTaleGameModeBase_C'
+[2022.03.28-18.51.42:781][440]LogWorld: Bringing World /Game/Maps/UEDPIE_0_SampleMap.SampleMap up for play (max tick rate 0) at 2022.03.29-03.51.42
+[2022.03.28-18.51.42:781][440]LogWorld: Bringing up level for play took: 0.001106
+[2022.03.28-18.51.42:782][440]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2022.03.28-18.51.42:833][440]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
+[2022.03.28-18.51.42:833][440]PIE: 서버가 로그인했습니다.
+[2022.03.28-18.51.42:835][440]PIE: 에디터에서 플레이 총 시작 시간 0.172초입니다.
+[2022.03.28-18.51.45:613][715]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.51.45:614][715]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-18.51.45:614][715]LogWorld: UWorld::CleanupWorld for SampleMap, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.51.45:614][715]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.51.45:622][715]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.28-18.51.45:626][715]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.51.45:644][715]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.51.45:645][715]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.28-18.51.45:646][715]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.28-18.51.45:705][715]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
+[2022.03.28-18.51.45:720][716]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2022.03.28-18.51.51:294][910]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.51.57:264][514]BlueprintLog: New page: BP_ST_SnowWhiteAttackSystem 컴파일
+[2022.03.28-18.51.57:304][514]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2022.03.28-18.51.57:728][556]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ST_SnowWhiteAttackSystem" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset" SILENT=true
+[2022.03.28-18.51.57:733][556]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_ST_SnowWhiteAttackSystem0D92A67D4C469E894F00DF9B893AA946.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset'
+[2022.03.28-18.51.57:750][556]AssetCheck: New page: 애셋 저장: BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.51.57:750][556]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem 유효성 검사
+[2022.03.28-18.51.58:315][614]LogSlate: Window 'BP_ST_SnowWhiteAttackSystem' being destroyed
+[2022.03.28-18.51.58:322][614]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.51.58:322][614]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.51.59:083][695]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.28-18.51.59:092][695]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.28-18.51.59:092][695]PIE: New page: PIE 세션: SampleMap (2022. 3. 29. 오후 12:51:59)
+[2022.03.28-18.51.59:092][695]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-18.51.59:095][695]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002608s)
+[2022.03.28-18.51.59:096][695]LogAIModule: Creating AISystem for world SampleMap
+[2022.03.28-18.51.59:096][695]LogPlayLevel: PIE: World Init took: (0.001380s)
+[2022.03.28-18.51.59:097][695]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/SampleMap.SampleMap to /Game/Maps/UEDPIE_0_SampleMap.SampleMap (0.004133s)
+[2022.03.28-18.51.59:117][695]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2022.03.28-18.51.59:118][695]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.28-18.51.59:118][695]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.28-18.51.59:118][695]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.28-18.51.59:119][695]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.28-18.51.59:119][695]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.28-18.51.59:134][695]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.28-18.51.59:135][695]LogAudioMixer: Display: 1: FrontRight
+[2022.03.28-18.51.59:169][695]LogAudioMixer: Display: Using Audio Device 스피커(USBFC1)
+[2022.03.28-18.51.59:169][695]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.28-18.51.59:169][695]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.28-18.51.59:170][695]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.28-18.51.59:170][695]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.28-18.51.59:170][695]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.28-18.51.59:170][695]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.28-18.51.59:186][695]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.28-18.51.59:186][695]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.28-18.51.59:186][695]LogInit: FAudioDevice initialized.
+[2022.03.28-18.51.59:186][695]LogAudio: Display: Audio Device (ID: 3) registered with world 'SampleMap'.
+[2022.03.28-18.51.59:194][695]LogLoad: Game class is 'BP_ST_SnowTaleGameModeBase_C'
+[2022.03.28-18.51.59:195][695]LogWorld: Bringing World /Game/Maps/UEDPIE_0_SampleMap.SampleMap up for play (max tick rate 0) at 2022.03.29-03.51.59
+[2022.03.28-18.51.59:196][695]LogWorld: Bringing up level for play took: 0.000992
+[2022.03.28-18.51.59:196][695]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2022.03.28-18.51.59:198][695]PIE: 서버가 로그인했습니다.
+[2022.03.28-18.51.59:199][695]PIE: 에디터에서 플레이 총 시작 시간 0.11초입니다.
+[2022.03.28-18.52.00:833][885]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.52.00:833][885]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-18.52.00:834][885]LogWorld: UWorld::CleanupWorld for SampleMap, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.52.00:834][885]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.52.00:844][885]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.28-18.52.00:847][885]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.52.00:866][885]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.28-18.52.00:866][885]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.28-18.52.00:867][885]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.28-18.52.00:887][885]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.52.00:890][885]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2022.03.28-18.52.00:904][886]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2022.03.28-18.56.59:201][ 11]LogHotReload: New module detected: UE4Editor-SnowTale-0041.dll
+[2022.03.28-18.57.01:901][ 20]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.28-18.57.02:964][ 20]LogClass: Could not find existing class ST_Enemy in package /Script/SnowTale for HotReload, assuming new class
+[2022.03.28-18.57.02:964][ 20]LogClass: Could not find existing class ST_Unit in package /Script/SnowTale for HotReload, assuming new class
+[2022.03.28-18.57.02:972][ 20]LogClass: Could not find existing class ST_SnowWhite in package /Script/SnowTale for HotReload, assuming new class
+[2022.03.28-18.57.02:983][ 20]LogHotReload: Re-instancing ST_Enemy after hot-reload.
+[2022.03.28-18.57.03:009][ 20]LogHotReload: Re-instancing ST_SnowWhite after hot-reload.
+[2022.03.28-18.57.03:050][ 20]LogHotReload: Re-instancing ST_Unit after hot-reload.
+[2022.03.28-18.57.03:065][ 20]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0003 seconds. Added 9 classes and 2 folders.
+[2022.03.28-18.57.03:068][ 20]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-18.57.03:164][ 20]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0110 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-18.57.03:168][ 20]Display: HotReload took  1.3s.
+[2022.03.28-18.58.34:377][355]Candidate modules for hot reload:
+[2022.03.28-18.58.34:377][355]  SnowTale
+[2022.03.28-18.58.34:377][355]Launching UnrealBuildTool... [D:/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SnowTale,5778 SnowTaleEditor Win64 Development -Project="D:/Unreal Projects/SnowTale/SnowTale.uproject" "D:/Unreal Projects/SnowTale/SnowTale.uproject"  -IgnoreJunk]
+[2022.03.28-18.58.34:384][355]Warning: Starting HotReload took  0.0s.
+[2022.03.28-18.58.39:116][715]CompilerResultsLog: New page: 컴파일 - 2022. 3. 29. 오후 12:58:39
+[2022.03.28-18.58.39:116][715]CompilerResultsLog: Building SnowTaleEditor...
+[2022.03.28-18.58.39:116][715]CompilerResultsLog: Using Visual Studio 2019 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.28-18.58.39:116][715]CompilerResultsLog: Building 3 actions with 4 processes...
+[2022.03.28-18.58.39:116][715]CompilerResultsLog:   [1/3] UE4Editor-SnowTale-5778.lib
+[2022.03.28-18.58.39:116][715]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-5778.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-5778.exp
+[2022.03.28-18.58.39:116][715]CompilerResultsLog:   [2/3] UE4Editor-SnowTale-5778.dll
+[2022.03.28-18.58.39:116][715]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-5778.suppressed.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-5778.suppressed.exp
+[2022.03.28-18.58.39:116][715]CompilerResultsLog:   [3/3] SnowTaleEditor.target
+[2022.03.28-18.58.39:117][715]CompilerResultsLog: Total time in Parallel executor: 2.81 seconds
+[2022.03.28-18.58.39:117][715]CompilerResultsLog: Total execution time: 4.59 seconds
+[2022.03.28-18.58.39:117][715]LogMainFrame: MainFrame: Module compiling took 4.744 seconds
+[2022.03.28-18.58.39:586][715]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0003 seconds. Added 9 classes and 2 folders.
+[2022.03.28-18.58.39:591][715]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-18.58.39:703][715]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0098 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-18.58.39:703][715]Display: HotReload took  5.3s.
+[2022.03.28-18.58.43:396][  3]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ST_SnowWhite.BP_ST_SnowWhite
+[2022.03.28-18.58.45:976][153]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.28-18.58.51:430][627]BlueprintLog: New page: BP_ST_SnowWhite 컴파일
+[2022.03.28-18.58.51:596][627]LogUObjectHash: Compacting FUObjectHashTables data took   5.36ms
+[2022.03.28-18.58.51:906][643]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ST_SnowWhite" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhite.uasset" SILENT=true
+[2022.03.28-18.58.51:918][643]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_ST_SnowWhite1B6A70624DA9DBFC435440B1838D3391.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhite.uasset'
+[2022.03.28-18.58.51:935][643]AssetCheck: New page: 애셋 저장: BP_ST_SnowWhite
+[2022.03.28-18.58.51:935][643]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_ST_SnowWhite.BP_ST_SnowWhite 유효성 검사
+[2022.03.28-18.58.52:423][682]LogSlate: Window 'BP_ST_SnowWhite' being destroyed
+[2022.03.28-18.58.52:469][682]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.58.52:469][682]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.58.53:195][740]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem
+[2022.03.28-18.58.54:969][883]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2022.03.28-18.58.56:944][107]LogSlate: Window 'BP_ST_SnowWhiteAttackSystem' being destroyed
+[2022.03.28-18.58.56:989][107]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.58.56:989][107]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.58.58:693][278]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.28-18.58.58:701][278]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.28-18.58.58:701][278]PIE: New page: PIE 세션: SampleMap (2022. 3. 29. 오후 12:58:58)
+[2022.03.28-18.58.58:739][278]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-18.58.58:742][278]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002499s)
+[2022.03.28-18.58.58:744][278]LogAIModule: Creating AISystem for world SampleMap
+[2022.03.28-18.58.58:744][278]LogPlayLevel: PIE: World Init took: (0.002209s)
+[2022.03.28-18.58.58:744][278]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/SampleMap.SampleMap to /Game/Maps/UEDPIE_0_SampleMap.SampleMap (0.004887s)
+[2022.03.28-18.58.58:805][278]LogUObjectHash: Compacting FUObjectHashTables data took   3.59ms
+[2022.03.28-18.58.58:808][278]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.28-18.58.58:808][278]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.28-18.58.58:808][278]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.28-18.58.58:808][278]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.28-18.58.58:825][278]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.28-18.58.58:825][278]LogAudioMixer: Display: 1: FrontRight
+[2022.03.28-18.58.58:864][278]LogAudioMixer: Display: Using Audio Device 스피커(USBFC1)
+[2022.03.28-18.58.58:864][278]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.28-18.58.58:864][278]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.28-18.58.58:864][278]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.28-18.58.58:864][278]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.28-18.58.58:864][278]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.28-18.58.58:864][278]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.28-18.58.58:879][278]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.28-18.58.58:879][278]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.28-18.58.58:879][278]LogInit: FAudioDevice initialized.
+[2022.03.28-18.58.58:879][278]LogAudio: Display: Audio Device (ID: 4) registered with world 'SampleMap'.
+[2022.03.28-18.58.58:886][278]LogLoad: Game class is 'BP_ST_SnowTaleGameModeBase_C'
+[2022.03.28-18.58.58:888][278]LogWorld: Bringing World /Game/Maps/UEDPIE_0_SampleMap.SampleMap up for play (max tick rate 0) at 2022.03.29-03.58.58
+[2022.03.28-18.58.58:888][278]LogWorld: Bringing up level for play took: 0.001096
+[2022.03.28-18.58.58:888][278]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2022.03.28-18.58.58:891][278]PIE: 서버가 로그인했습니다.
+[2022.03.28-18.58.58:892][278]PIE: 에디터에서 플레이 총 시작 시간 0.196초입니다.
+[2022.03.28-18.59.00:273][437]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.59.00:273][437]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-18.59.00:273][437]LogWorld: UWorld::CleanupWorld for SampleMap, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-18.59.00:274][437]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.59.00:284][437]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.03.28-18.59.00:287][437]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-18.59.00:305][437]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.03.28-18.59.00:305][437]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.28-18.59.00:306][437]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.03.28-18.59.00:326][437]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.03.28-18.59.00:329][437]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2022.03.28-18.59.00:344][438]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2022.03.28-18.59.25:604][568]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2022.03.28-18.59.25:608][568]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SampleMap" FILE="../../../../Unreal Projects/SnowTale/Saved/Autosaves/Game/Maps/SampleMap_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2022.03.28-18.59.25:660][568]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/SampleMap_Auto1DF857803446E22B087E0528ECBBBA4CD.tmp' to '../../../../Unreal Projects/SnowTale/Saved/Autosaves/Game/Maps/SampleMap_Auto1.umap'
+[2022.03.28-18.59.25:701][568]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/SampleMap' took 0.117
+[2022.03.28-18.59.25:701][568]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.117
+[2022.03.28-19.00.52:164][823]LogHotReload: New module detected: UE4Editor-SnowTale-0044.dll
+[2022.03.28-19.00.53:554][828]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.28-19.00.53:972][828]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0003 seconds. Added 9 classes and 2 folders.
+[2022.03.28-19.00.53:976][828]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-19.00.54:071][828]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0108 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-19.00.54:074][828]Display: HotReload took  0.5s.
+[2022.03.28-19.05.24:686][632]LogHotReload: New module detected: UE4Editor-SnowTale-0046.dll
+[2022.03.28-19.05.26:052][637]LogHotReload: Starting Hot-Reload from IDE
+[2022.03.28-19.05.26:570][637]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0004 seconds. Added 9 classes and 2 folders.
+[2022.03.28-19.05.26:575][637]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-19.05.26:694][637]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0110 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-19.05.26:698][637]Display: HotReload took  0.6s.
+[2022.03.28-19.05.28:968][724]Candidate modules for hot reload:
+[2022.03.28-19.05.28:968][724]  SnowTale
+[2022.03.28-19.05.28:968][724]Launching UnrealBuildTool... [D:/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SnowTale,1202 SnowTaleEditor Win64 Development -Project="D:/Unreal Projects/SnowTale/SnowTale.uproject" "D:/Unreal Projects/SnowTale/SnowTale.uproject"  -IgnoreJunk]
+[2022.03.28-19.05.28:975][724]Warning: Starting HotReload took  0.0s.
+[2022.03.28-19.05.35:665][977]CompilerResultsLog: New page: 컴파일 - 2022. 3. 29. 오후 1:05:35
+[2022.03.28-19.05.35:666][977]CompilerResultsLog: Building SnowTaleEditor...
+[2022.03.28-19.05.35:666][977]CompilerResultsLog: Using Visual Studio 2019 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.28-19.05.35:666][977]CompilerResultsLog: Building 3 actions with 4 processes...
+[2022.03.28-19.05.35:666][977]CompilerResultsLog:   [1/3] UE4Editor-SnowTale-1202.lib
+[2022.03.28-19.05.35:666][977]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1202.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1202.exp
+[2022.03.28-19.05.35:666][977]CompilerResultsLog:   [2/3] UE4Editor-SnowTale-1202.dll
+[2022.03.28-19.05.35:666][977]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1202.suppressed.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1202.suppressed.exp
+[2022.03.28-19.05.35:666][977]CompilerResultsLog:   [3/3] SnowTaleEditor.target
+[2022.03.28-19.05.35:666][977]CompilerResultsLog: Total time in Parallel executor: 4.66 seconds
+[2022.03.28-19.05.35:666][977]CompilerResultsLog: Total execution time: 6.32 seconds
+[2022.03.28-19.05.35:666][977]LogMainFrame: MainFrame: Module compiling took 6.701 seconds
+[2022.03.28-19.05.36:056][977]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0004 seconds. Added 9 classes and 2 folders.
+[2022.03.28-19.05.36:063][977]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-19.05.36:199][977]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0102 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-19.05.36:199][977]Display: HotReload took  7.2s.
+[2022.03.28-19.05.55:102][293]Candidate modules for hot reload:
+[2022.03.28-19.05.55:102][293]  SnowTale
+[2022.03.28-19.05.55:102][293]Launching UnrealBuildTool... [D:/UE_4.26/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=SnowTale,1081 SnowTaleEditor Win64 Development -Project="D:/Unreal Projects/SnowTale/SnowTale.uproject" "D:/Unreal Projects/SnowTale/SnowTale.uproject"  -IgnoreJunk]
+[2022.03.28-19.05.55:115][293]Warning: Starting HotReload took  0.0s.
+[2022.03.28-19.06.01:867][857]CompilerResultsLog: New page: 컴파일 - 2022. 3. 29. 오후 1:06:01
+[2022.03.28-19.06.01:867][857]CompilerResultsLog: Building SnowTaleEditor...
+[2022.03.28-19.06.01:867][857]CompilerResultsLog: Using Visual Studio 2019 14.31.31105 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2022.03.28-19.06.01:867][857]CompilerResultsLog: Building 3 actions with 4 processes...
+[2022.03.28-19.06.01:867][857]CompilerResultsLog:   [1/3] UE4Editor-SnowTale-1081.lib
+[2022.03.28-19.06.01:867][857]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1081.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1081.exp
+[2022.03.28-19.06.01:867][857]CompilerResultsLog:   [2/3] UE4Editor-SnowTale-1081.dll
+[2022.03.28-19.06.01:867][857]CompilerResultsLog:      Creating library D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1081.suppressed.lib and object D:\Unreal Projects\SnowTale\Intermediate\Build\Win64\UE4Editor\Development\SnowTale\UE4Editor-SnowTale-1081.suppressed.exp
+[2022.03.28-19.06.01:867][857]CompilerResultsLog:   [3/3] SnowTaleEditor.target
+[2022.03.28-19.06.01:867][857]CompilerResultsLog: Total time in Parallel executor: 4.09 seconds
+[2022.03.28-19.06.01:867][857]CompilerResultsLog: Total execution time: 6.61 seconds
+[2022.03.28-19.06.01:867][857]LogMainFrame: MainFrame: Module compiling took 6.770 seconds
+[2022.03.28-19.06.02:446][857]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SnowTale' in 0.0003 seconds. Added 9 classes and 2 folders.
+[2022.03.28-19.06.02:454][857]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2022.03.28-19.06.02:616][857]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0107 seconds. Added 3610 classes and 861 folders.
+[2022.03.28-19.06.02:617][857]Display: HotReload took  7.5s.
+[2022.03.28-19.06.04:513][929]LogUObjectHash: Compacting FUObjectHashTables data took   7.77ms
+[2022.03.28-19.06.05:629][929]LogSlate: Window '콘텐츠 저장' being destroyed
+[2022.03.28-19.06.05:683][929]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/SampleMap" FILE="../../../../Unreal Projects/SnowTale/Content/Maps/SampleMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2022.03.28-19.06.05:749][929]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2022.03.28-19.06.05:806][929]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/SampleMap753A98BD4D8D1FD3577F858A0045301C.tmp' to '../../../../Unreal Projects/SnowTale/Content/Maps/SampleMap.umap'
+[2022.03.28-19.06.05:836][929]LogFileHelpers: Saving map 'SampleMap' took 0.154
+[2022.03.28-19.06.05:855][929]AssetCheck: New page: 애셋 저장: SampleMap
+[2022.03.28-19.06.05:855][929]LogContentValidation: Display: World /Game/Maps/SampleMap.SampleMap 유효성 검사
+[2022.03.28-19.06.07:079][ 10]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem
+[2022.03.28-19.06.17:256][ 45]BlueprintLog: New page: BP_ST_SnowWhiteAttackSystem 컴파일
+[2022.03.28-19.06.17:318][ 45]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
+[2022.03.28-19.06.18:111][128]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/BP_ST_SnowWhiteAttackSystem" FILE="../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset" SILENT=true
+[2022.03.28-19.06.18:118][128]LogSavePackage: Moving '../../../../Unreal Projects/SnowTale/Saved/BP_ST_SnowWhiteAttackSystemAAF05E644FF450628B3EED82370DF806.tmp' to '../../../../Unreal Projects/SnowTale/Content/Blueprints/BP_ST_SnowWhiteAttackSystem.uasset'
+[2022.03.28-19.06.18:143][128]AssetCheck: New page: 애셋 저장: BP_ST_SnowWhiteAttackSystem
+[2022.03.28-19.06.18:143][128]LogContentValidation: Display: Blueprint /Game/Blueprints/BP_ST_SnowWhiteAttackSystem.BP_ST_SnowWhiteAttackSystem 유효성 검사
+[2022.03.28-19.06.18:633][171]LogSlate: Window 'BP_ST_SnowWhiteAttackSystem' being destroyed
+[2022.03.28-19.06.18:669][171]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-19.06.18:669][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-19.06.21:227][418]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/BP_ST_SnowWhite.BP_ST_SnowWhite
+[2022.03.28-19.06.23:626][556]LogSlate: Window 'BP_ST_SnowWhite' being destroyed
+[2022.03.28-19.06.23:633][556]LogSlate: Window 'BP_ST_SnowWhite' being destroyed
+[2022.03.28-19.06.23:668][556]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2022.03.28-19.06.23:668][556]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.03.28-19.06.24:525][650]LogTemp: Repeating last play command: 선택된 뷰포트
+[2022.03.28-19.06.24:535][650]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.03.28-19.06.24:535][650]PIE: New page: PIE 세션: SampleMap (2022. 3. 29. 오후 1:06:24)
+[2022.03.28-19.06.24:560][650]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_SampleMap
+[2022.03.28-19.06.24:562][650]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002601s)
+[2022.03.28-19.06.24:564][650]LogAIModule: Creating AISystem for world SampleMap
+[2022.03.28-19.06.24:564][650]LogPlayLevel: PIE: World Init took: (0.001681s)
+[2022.03.28-19.06.24:564][650]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/SampleMap.SampleMap to /Game/Maps/UEDPIE_0_SampleMap.SampleMap (0.004496s)
+[2022.03.28-19.06.24:586][650]LogUObjectHash: Compacting FUObjectHashTables data took   2.53ms
+[2022.03.28-19.06.24:588][650]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.03.28-19.06.24:588][650]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.03.28-19.06.24:588][650]LogAudio: Display: Using built-in audio occlusion.
+[2022.03.28-19.06.24:588][650]LogAudioMixer: Display: Initializing audio mixer.
+[2022.03.28-19.06.24:604][650]LogAudioMixer: Display: 0: FrontLeft
+[2022.03.28-19.06.24:604][650]LogAudioMixer: Display: 1: FrontRight
+[2022.03.28-19.06.24:642][650]LogAudioMixer: Display: Using Audio Device 스피커(USBFC1)
+[2022.03.28-19.06.24:643][650]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.03.28-19.06.24:643][650]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.03.28-19.06.24:643][650]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.03.28-19.06.24:643][650]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.03.28-19.06.24:643][650]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.03.28-19.06.24:643][650]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2022.03.28-19.06.24:662][650]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.03.28-19.06.24:662][650]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.03.28-19.06.24:662][650]LogInit: FAudioDevice initialized.
+[2022.03.28-19.06.24:662][650]LogAudio: Display: Audio Device (ID: 5) registered with world 'SampleMap'.
+[2022.03.28-19.06.24:671][650]LogLoad: Game class is 'BP_ST_SnowTaleGameModeBase_C'
+[2022.03.28-19.06.24:673][650]LogWorld: Bringing World /Game/Maps/UEDPIE_0_SampleMap.SampleMap up for play (max tick rate 0) at 2022.03.29-04.06.24
+[2022.03.28-19.06.24:674][650]LogWorld: Bringing up level for play took: 0.001092
+[2022.03.28-19.06.24:674][650]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2022.03.28-19.06.24:677][650]PIE: 서버가 로그인했습니다.
+[2022.03.28-19.06.24:677][650]PIE: 에디터에서 플레이 총 시작 시간 0.148초입니다.
