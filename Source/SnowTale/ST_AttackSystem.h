@@ -12,6 +12,10 @@ class SNOWTALE_API AST_AttackSystem : public AActor
 
 public:
 
+	AST_AttackSystem();
+
+public:
+
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void Attack();
@@ -26,5 +30,9 @@ protected:
 protected:
 
 	bool bActivated;
+
+	FVector SpawnLocation;
+
+	FRotator SpawnRotation;
 	
 };

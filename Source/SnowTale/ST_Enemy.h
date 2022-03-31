@@ -16,8 +16,6 @@ public:
 
 public:
 
-	virtual void Init();
-
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void LookAtTarget(FVector TargetLocation) override;

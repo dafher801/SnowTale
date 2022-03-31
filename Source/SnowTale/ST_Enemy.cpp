@@ -12,13 +12,6 @@ AST_Enemy::AST_Enemy()
 
 }
 
-void AST_Enemy::Init()
-{
-	SpawnDefaultController();
-
-	SetActivated(true);
-}
-
 void AST_Enemy::Tick(float DeltaTime)
 {
 	if (!bActivated)
@@ -71,6 +64,10 @@ float AST_Enemy::GetAccessibleDistanceToPlayer() const
 void AST_Enemy::BeginPlay()
 {
 	Super::BeginPlay();
+
+	SpawnDefaultController();
+
+	SetActivated(false);
 
 	NavSystem = UNavigationSystemV1::GetNavigationSystem(GetWorld());
 

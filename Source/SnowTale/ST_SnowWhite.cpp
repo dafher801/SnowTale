@@ -5,7 +5,7 @@
 
 AST_SnowWhite::AST_SnowWhite()
 {
-	SetActivated(true);
+	
 }
 
 void AST_SnowWhite::Tick(float DeltaTime)
@@ -95,4 +95,6 @@ void AST_SnowWhite::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 void AST_SnowWhite::BeginPlay()
 {
 	Super::BeginPlay();
+
+	SetActivated(true);
 }

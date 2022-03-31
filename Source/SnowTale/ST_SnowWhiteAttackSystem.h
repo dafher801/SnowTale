@@ -9,5 +9,9 @@ UCLASS()
 class SNOWTALE_API AST_SnowWhiteAttackSystem : public AST_LongRangeAttackSystem
 {
 	GENERATED_BODY()
+
+public:
+
+	virtual void Attack();
 	
 };

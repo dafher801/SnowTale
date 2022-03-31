@@ -9,6 +9,9 @@ void AST_LongRangeAttackSystem::Tick(float DeltaTime)
 
 void AST_LongRangeAttackSystem::Attack()
 {
+	if (!bActivated)
+		return;
+
 	if (CurrentProjectileNum >= MaxProjectileNum)
 		CurrentProjectileNum = 0;
 
@@ -16,7 +19,7 @@ void AST_LongRangeAttackSystem::Attack()
 	{
 		if (!ProjectileArray[i]->GetActivated())
 		{
-			ProjectileArray[i]->Init();
+			ProjectileArray[i]->Init(SpawnLocation, SpawnRotation);
 			return;
 		}
 	}

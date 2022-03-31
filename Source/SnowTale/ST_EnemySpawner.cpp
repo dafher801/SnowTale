@@ -10,11 +10,6 @@ AST_EnemySpawner::AST_EnemySpawner()
 void AST_EnemySpawner::BeginPlay()
 {
 	Super::BeginPlay();
-
-	for (int i = 0; i < EnemyArray.Num(); i++)
-	{
-		EnemyArray[i]->SetActivated(false);
-	}
 }
 
 void AST_EnemySpawner::Tick(float DeltaTime)

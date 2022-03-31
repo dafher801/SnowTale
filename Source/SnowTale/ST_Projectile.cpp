@@ -28,10 +28,10 @@ AST_Projectile::AST_Projectile()
 	SetActivated(false);
 }
 
-void AST_Projectile::Init()
+void AST_Projectile::Init(FVector SpawnLocation, FRotator SpawnRotation)
 {
-	SetActorLocation(GetInstigator()->GetActorLocation());
-	SetActorRotation(GetInstigator()->GetActorRotation());
+	SetActorLocation(SpawnLocation);
+	SetActorRotation(SpawnRotation);
 
 	Damage =Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().ATK;
 
@@ -40,7 +40,7 @@ void AST_Projectile::Init()
 	CurrentMovementDistance = 0.0f;
 
 	Movement->MaxSpeed = Movement->InitialSpeed = 5000.0f;
-	Movement->Velocity = GetInstigator()->GetActorRotation().Vector() * Movement->MaxSpeed;
+	Movement->Velocity = SpawnRotation.Vector() * Movement->MaxSpeed;
 
 	SetActivated(true);
 }

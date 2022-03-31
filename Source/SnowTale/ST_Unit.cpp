@@ -1,7 +1,8 @@
 
 #include "ST_Unit.h"
 #include "ST_AttackSystem.h"
-#include "ST_ABP_SampleUnit.h"
+#include "ST_ABP_Unit.h"
+#include "UObject/ConstructorHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -60,7 +61,7 @@ void AST_Unit::BeginAttack()
 	{
 		bAttacking = true;
 		TimeElapsedSinceAttack = 0.0f;
-		Cast<UST_ABP_SampleUnit>(GetMesh()->GetAnimInstance())->PlayAttackMontage();
+		Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance())->PlayAttackMontage();
 	}
 }
 
@@ -115,7 +116,9 @@ bool AST_Unit::GetActivated() const
 void AST_Unit::SetActivated(bool Activated)
 {
 	bActivated = Activated;
+	AttackSystem->SetActivated(bActivated);
 	GetCharacterMovement()->SetActive(bActivated);
+
 	SetActorHiddenInGame(!bActivated);
 	SetActorTickEnabled(bActivated);
 	SetActorEnableCollision(bActivated);

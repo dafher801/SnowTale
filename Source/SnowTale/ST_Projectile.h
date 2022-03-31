@@ -16,7 +16,7 @@ public:
 
 public:
 
-	virtual void Init();
+	virtual void Init(FVector SpawnLocation, FRotator SpawnRotation);
 
 	virtual void Tick(float DeltaTime) override;
 
