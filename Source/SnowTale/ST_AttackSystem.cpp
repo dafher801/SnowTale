@@ -2,9 +2,7 @@
 #include "ST_AttackSystem.h"
 
 AST_AttackSystem::AST_AttackSystem()
-	: bActivated(false)
-	, SpawnLocation(FVector::ZeroVector)
-	, SpawnRotation(FRotator::ZeroRotator) {}
+	: bActivated(false) {}
 
 void AST_AttackSystem::Tick(float DeltaTime)
 {

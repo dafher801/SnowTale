@@ -12,6 +12,10 @@ class SNOWTALE_API AST_LongRangeAttackSystem : public AST_AttackSystem
 
 public:
 
+	AST_LongRangeAttackSystem();
+
+public:
+
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void Attack() override;
@@ -32,5 +36,9 @@ protected:
 		int MaxProjectileNum;
 
 	int CurrentProjectileNum;
+
+	FVector SpawnLocation;
+
+	FRotator SpawnRotation;
 	
 };

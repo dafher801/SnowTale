@@ -2,6 +2,10 @@
 #include "ST_LongRangeAttackSystem.h"
 #include "ST_Projectile.h"
 
+AST_LongRangeAttackSystem::AST_LongRangeAttackSystem()
+	: SpawnLocation(FVector::ZeroVector)
+	, SpawnRotation(FRotator::ZeroRotator) {}
+
 void AST_LongRangeAttackSystem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

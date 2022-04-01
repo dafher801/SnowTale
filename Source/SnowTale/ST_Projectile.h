@@ -25,7 +25,7 @@ public:
 			class UPrimitiveComponent* Other, FVector NormalImpulse, const FHitResult& hit);
 
 	bool GetActivated() const;
-	void SetActivated(bool Activated);
+	virtual void SetActivated(bool Activated);
 
 protected:
 
@@ -44,6 +44,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Movement")
 		class UProjectileMovementComponent* Movement;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Effect")
+		class UParticleSystem* AttackParticleSystem;
 
 	int Damage;
 

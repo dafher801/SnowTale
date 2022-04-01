@@ -7,6 +7,7 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/ArrowComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
+#include "Particles/ParticleSystem.h"
 
 AST_Projectile::AST_Projectile()
 {
@@ -33,13 +34,12 @@ void AST_Projectile::Init(FVector SpawnLocation, FRotator SpawnRotation)
 	SetActorLocation(SpawnLocation);
 	SetActorRotation(SpawnRotation);
 
-	Damage =Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().ATK;
+	Damage = Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().ATK;
 
 	MaxMovementDistance = Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().Range;
 
 	CurrentMovementDistance = 0.0f;
 
-	Movement->MaxSpeed = Movement->InitialSpeed = 5000.0f;
 	Movement->Velocity = SpawnRotation.Vector() * Movement->MaxSpeed;
 
 	SetActivated(true);
@@ -60,6 +60,9 @@ void AST_Projectile::OnHit(UPrimitiveComponent* OtherComp, AActor* OtherActor, U
 {
 	Damage = Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().ATK;
 
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), 
+		AttackParticleSystem, GetActorLocation(), GetActorRotation());
+
 	UGameplayStatics::ApplyDamage(OtherActor, Damage,
 		UGameplayStatics::GetPlayerController(GetWorld(), 0), this, NULL);
 
@@ -75,6 +78,7 @@ void AST_Projectile::SetActivated(bool Activated)
 {
 	bActivated = Activated;
 	Movement->SetActive(bActivated);
+
 	SetActorHiddenInGame(!bActivated);
 	SetActorTickEnabled(bActivated);
 	SetActorEnableCollision(bActivated);

@@ -30,9 +30,5 @@ protected:
 protected:
 
 	bool bActivated;
-
-	FVector SpawnLocation;
-
-	FRotator SpawnRotation;
 	
 };
