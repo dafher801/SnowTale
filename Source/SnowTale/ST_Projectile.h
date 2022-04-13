@@ -27,6 +27,8 @@ public:
 	bool GetActivated() const;
 	virtual void SetActivated(bool Activated);
 
+	class UProjectileMovementComponent* GetMovement() const;
+
 protected:
 
 	virtual void BeginPlay() override;
@@ -47,6 +49,9 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Effect")
 		class UParticleSystem* AttackParticleSystem;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Calculation")
+		FRotator RotationErrorCalculation;
 
 	int Damage;
 

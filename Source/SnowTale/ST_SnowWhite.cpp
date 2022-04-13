@@ -1,12 +1,8 @@
 
 #include "ST_SnowWhite.h"
+#include "ST_HealItem.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/CharacterMovementComponent.h"
-
-AST_SnowWhite::AST_SnowWhite()
-{
-	
-}
 
 void AST_SnowWhite::Tick(float DeltaTime)
 {
@@ -61,6 +57,26 @@ void AST_SnowWhite::ExitAttack()
 	Super::ExitAttack();
 }
 
+void AST_SnowWhite::AcquireItem(AST_Item* Item)
+{
+	ItemArray[static_cast<int>(Item->GetItemType())].Push(Item);
+}
+
+void AST_SnowWhite::Heal(FKey Key)
+{
+	int HealType = static_cast<int>(EST_ItemType::HEAL);
+
+	if (ItemArray[HealType].Num() > 0)
+	{
+		Cast<AST_HealItem>(ItemArray[HealType].Pop())->Heal(BaseStatus.HP, CurrentStatus.HP);
+		UE_LOG(LogTemp, Log, TEXT("Use Heal"));
+	}
+	else
+		UE_LOG(LogTemp, Log, TEXT("Not enough item"));
+
+	UE_LOG(LogTemp, Log, TEXT("%f"), CurrentStatus.HP);
+}
+
 void AST_SnowWhite::InputForward(float NewForwardValue)
 {
 	CurrentForwardValue = NewForwardValue;
@@ -71,12 +87,12 @@ void AST_SnowWhite::InputRight(float NewRightValue)
 	CurrentRightValue = NewRightValue;
 }
 
-void AST_SnowWhite::PressedLeftMouse(FKey key)
+void AST_SnowWhite::PressedLeftMouse(FKey Key)
 {
 	bPressedLeftMouse = true;
 }
 
-void AST_SnowWhite::ReleasedLeftMouse(FKey key)
+void AST_SnowWhite::ReleasedLeftMouse(FKey Key)
 {
 	bPressedLeftMouse = false;
 }
@@ -90,11 +106,19 @@ void AST_SnowWhite::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 	InputComponent->BindAction("Attack", IE_Pressed, this, &AST_SnowWhite::PressedLeftMouse);
 	InputComponent->BindAction("Attack", IE_Released, this, &AST_SnowWhite::ReleasedLeftMouse);
+
+	InputComponent->BindAction("UseHeal", IE_Pressed, this, &AST_SnowWhite::Heal);
 }
 
 void AST_SnowWhite::BeginPlay()
 {
 	Super::BeginPlay();
+
+	for (int ItemType = static_cast<int>(EST_ItemType::BEGIN);
+		ItemType < static_cast<int>(EST_ItemType::END); ItemType++)
+	{
+		ItemArray.Add(TArray<AST_Item*>());
+	}
 
 	SetActivated(true);
 }

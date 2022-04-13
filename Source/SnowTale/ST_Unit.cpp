@@ -59,9 +59,13 @@ void AST_Unit::BeginAttack()
 {
 	if (!bAttacking)
 	{
+		UST_ABP_Unit* UnitABP = Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance());
+
 		bAttacking = true;
 		TimeElapsedSinceAttack = 0.0f;
-		Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance())->PlayAttackMontage();
+
+		if (UnitABP)
+			UnitABP->PlayAttackMontage();
 	}
 }
 
@@ -94,6 +98,8 @@ float AST_Unit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, 
 		SetActivated(false);
 		DetachFromControllerPendingDestroy();
 	}
+
+	UE_LOG(LogTemp, Log, TEXT("%f"), CurrentStatus.HP);
 
 	return DamageAmount;
 }

@@ -84,6 +84,11 @@ void AST_Projectile::SetActivated(bool Activated)
 	SetActorEnableCollision(bActivated);
 }
 
+UProjectileMovementComponent* AST_Projectile::GetMovement() const
+{
+	return Movement;
+}
+
 void AST_Projectile::BeginPlay()
 {
 	Super::BeginPlay();

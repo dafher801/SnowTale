@@ -1,6 +1,7 @@
 
 #include "ST_CircularPatternCenter.h"
 #include "ST_CircularPatternBullet.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 
 void AST_CircularPatternCenter::Init(FVector SpawnLocation, FRotator SpawnRotation)
 {
@@ -14,6 +15,7 @@ void AST_CircularPatternCenter::Init(FVector SpawnLocation, FRotator SpawnRotati
 		SpnningBulletLocation.Y = SpawnLocation.Y + Radius * FMath::Sin(i * Radian);
 
 		BulletArray[i]->Init(SpnningBulletLocation, SpawnRotation);
+		BulletArray[i]->GetMovement()->Velocity = FVector::ZeroVector;
 	}
 }
 
@@ -22,9 +24,15 @@ void AST_CircularPatternCenter::Tick(float DeltaTime)
 	if (!bActivated)
 		return;
 
-	Super::Tick(DeltaTime);
+	AActor::Tick(DeltaTime);
 
-	AddActorLocalRotation(FRotator(0.0f, SpinPerTick, 0.0f));
+	if ((CurrentMovementDistance += (DeltaTime * Movement->MaxSpeed)) > MaxMovementDistance)
+	{
+		SetActivated(false);
+		Clear();
+	}
+	else
+		AddActorLocalRotation(FRotator(0.0f, SpinPerTick, 0.0f));
 }
 
 void AST_CircularPatternCenter::SetActivated(bool Activated)
@@ -53,7 +61,6 @@ void AST_CircularPatternCenter::BeginPlay()
 	for (int i = 0; i < SpinningBulletNum; i++)
 	{
 		BulletArray.Add(GetWorld()->SpawnActor<AST_CircularPatternBullet>(SpinningBulletClass, SpawnParameters));
-		BulletArray[i]->SetCenterInfo(Movement, SpinPerTick);
 		BulletArray[i]->AttachToActor(this, AttachRules);
 	}
 }

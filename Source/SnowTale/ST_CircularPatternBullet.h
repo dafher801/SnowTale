@@ -15,13 +15,5 @@ public:
 	virtual void Init(FVector SpawnLocation, FRotator SpawnRotation) override;
 
 	virtual void Tick(float DeltaTime) override;
-
-	void SetCenterInfo(class UProjectileMovementComponent* CenterMovement, float CenterSpinPerTick);
-
-protected:
-
-	class UProjectileMovementComponent* SpinningCenterMovement;
-
-	float SpinPerTick;
 	
 };

@@ -26,19 +26,19 @@ protected:
 
 protected:
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpinningProjectile")
 		TArray<class AST_CircularPatternBullet*> BulletArray;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpinningProjectile")
 		TSubclassOf<class AST_CircularPatternBullet> SpinningBulletClass;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpinningProjectile")
 		int SpinningBulletNum;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpinningProjectile")
 		float Radius;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Projectile")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "SpinningProjectile")
 		float SpinPerTick;
 
 	float Radian;
