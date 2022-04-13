@@ -12,6 +12,8 @@ class SNOWTALE_API UST_UpdateBlackboardService : public UBTService
 
 public:
 
+	virtual void OnSearchStart(FBehaviorTreeSearchData& SearchData);
+
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds) override;
 
 protected:
@@ -20,15 +22,17 @@ protected:
 
 	void UpdateVisibleFromTarget(UBehaviorTreeComponent& OwnerComp);
 
-	bool IsAccessibleToPlayer(UBehaviorTreeComponent& OwnerComp);
-
 	void UpdateMovable(UBehaviorTreeComponent& OwnerComp);
 
 	void UpdateAssailable(UBehaviorTreeComponent& OwnerComp);
 
 protected:
 
-	class AST_Enemy* Owner;
+	UPROPERTY()
+		class AST_Enemy* Owner;
+
+	UPROPERTY()
+		class APawn* Player;
 
 	FVector PlayerLocation;
 

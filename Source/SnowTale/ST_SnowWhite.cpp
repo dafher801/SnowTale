@@ -2,7 +2,18 @@
 #include "ST_SnowWhite.h"
 #include "ST_HealItem.h"
 #include "Kismet/GameplayStatics.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+
+AST_SnowWhite::AST_SnowWhite()
+{
+	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
+	SpringArm->SetupAttachment(RootComponent);
+
+	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	Camera->SetupAttachment(SpringArm);
+}
 
 void AST_SnowWhite::Tick(float DeltaTime)
 {
@@ -69,12 +80,7 @@ void AST_SnowWhite::Heal(FKey Key)
 	if (ItemArray[HealType].Num() > 0)
 	{
 		Cast<AST_HealItem>(ItemArray[HealType].Pop())->Heal(BaseStatus.HP, CurrentStatus.HP);
-		UE_LOG(LogTemp, Log, TEXT("Use Heal"));
 	}
-	else
-		UE_LOG(LogTemp, Log, TEXT("Not enough item"));
-
-	UE_LOG(LogTemp, Log, TEXT("%f"), CurrentStatus.HP);
 }
 
 void AST_SnowWhite::InputForward(float NewForwardValue)

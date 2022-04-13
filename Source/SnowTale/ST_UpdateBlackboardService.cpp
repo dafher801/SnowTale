@@ -5,12 +5,20 @@
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
+void UST_UpdateBlackboardService::OnSearchStart(FBehaviorTreeSearchData& SearchData)
+{
+	Player = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	Owner = Cast<AST_Enemy>(SearchData.OwnerComp.GetAIOwner()->GetCharacter());
+}
+
 void UST_UpdateBlackboardService::TickNode(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory, float DeltaSeconds)
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaSeconds);
 
-	Owner = Cast<AST_Enemy>(OwnerComp.GetAIOwner()->GetCharacter());
-	PlayerLocation = UGameplayStatics::GetPlayerPawn(GetWorld(), 0)->GetActorLocation();
+	if (!IsValid(Player))
+		return;
+
+	PlayerLocation = Player->GetActorLocation();
 
 	UpdatePlayerLocation(OwnerComp);
 	UpdateVisibleFromTarget(OwnerComp);
@@ -39,16 +47,10 @@ void UST_UpdateBlackboardService::UpdateVisibleFromTarget(UBehaviorTreeComponent
 		AST_EnemyController::VisibleFromTargetKey, bVisibleFromTarget);
 }
 
-bool UST_UpdateBlackboardService::IsAccessibleToPlayer(UBehaviorTreeComponent& OwnerComp)
-{
-	float DistanceFromPlayer = FVector::Distance(Owner->GetActorLocation(), PlayerLocation);
-
-	return Owner->GetAccessibleDistanceToPlayer() < DistanceFromPlayer;
-}
-
 void UST_UpdateBlackboardService::UpdateMovable(UBehaviorTreeComponent& OwnerComp)
 {
-	bMovable = Owner->GetActivated() && (IsAccessibleToPlayer(OwnerComp) || !bVisibleFromTarget);
+	bMovable = Owner->GetActivated() && (!bVisibleFromTarget || 
+		Owner->GetAccessibleDistanceToPlayer() < FVector::Distance(Owner->GetActorLocation(), PlayerLocation));
 
 	OwnerComp.GetBlackboardComponent()->SetValueAsBool(AST_EnemyController::MovableKey, bMovable);
 }

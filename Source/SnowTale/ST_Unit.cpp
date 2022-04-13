@@ -1,18 +1,20 @@
 
 #include "ST_Unit.h"
-#include "ST_AttackSystem.h"
 #include "ST_ABP_Unit.h"
-#include "UObject/ConstructorHelpers.h"
+#include "ST_AttackSystem.h"
+#include "ST_UnitWidget.h"
 #include "Kismet/GameplayStatics.h"
-#include "Components/CapsuleComponent.h"
-#include "GameFramework/CharacterMovementComponent.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
+#include "Components/WidgetComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 AST_Unit::AST_Unit()
-	: AttackSystem(nullptr)
-	, bAttacking(false)
+	: bAttacking(false)
 {
  	PrimaryActorTick.bCanEverTick = true;
+
+	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBarWidget"));
+	HPBarWidget->SetupAttachment(GetMesh());
 }
 
 void AST_Unit::Tick(float DeltaTime)
@@ -96,7 +98,6 @@ float AST_Unit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, 
 	if (CurrentStatus.HP <= 0.0f)
 	{
 		SetActivated(false);
-		DetachFromControllerPendingDestroy();
 	}
 
 	UE_LOG(LogTemp, Log, TEXT("%f"), CurrentStatus.HP);
@@ -114,6 +115,11 @@ FST_Status AST_Unit::GetCurrentStatus() const
 	return CurrentStatus;
 }
 
+float AST_Unit::GetHPRatio() const
+{
+	return CurrentStatus.HP / BaseStatus.HP;
+}
+
 bool AST_Unit::GetActivated() const
 {
 	return bActivated;
@@ -128,6 +134,11 @@ void AST_Unit::SetActivated(bool Activated)
 	SetActorHiddenInGame(!bActivated);
 	SetActorTickEnabled(bActivated);
 	SetActorEnableCollision(bActivated);
+
+	if (Activated)
+		SpawnDefaultController();
+	else
+		DetachFromControllerPendingDestroy();
 }
 
 bool AST_Unit::IsAttacking() const
@@ -143,6 +154,9 @@ void AST_Unit::BeginPlay()
 	SpawnParameters.Owner = this;
 
 	AttackSystem = GetWorld()->SpawnActor<AST_AttackSystem>(AttackSystemClass, SpawnParameters);
+	
+	if (IsValid(HPBarWidget->GetWidget()))
+		Cast<UST_UnitWidget>(HPBarWidget->GetWidget())->BindUnit(this);
 
 	CurrentStatus = BaseStatus;
 	GetCharacterMovement()->MaxWalkSpeed = CurrentStatus.MoveSpeed;

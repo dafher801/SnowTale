@@ -12,10 +12,6 @@ class SNOWTALE_API AST_Enemy : public AST_Unit
 
 public:
 
-	AST_Enemy();
-
-public:
-
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void LookAtTarget(FVector TargetLocation) override;

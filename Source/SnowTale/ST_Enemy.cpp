@@ -6,12 +6,6 @@
 #include "NavigationSystem.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 
-AST_Enemy::AST_Enemy()
-	: NavSystem(nullptr)
-{
-
-}
-
 void AST_Enemy::Tick(float DeltaTime)
 {
 	if (!bActivated)
@@ -52,8 +46,7 @@ void AST_Enemy::ExitAttack()
 
 void AST_Enemy::OnHit(UPrimitiveComponent* OtherComp, AActor* OtherActor, UPrimitiveComponent* Other, FVector NormalImpulse, const FHitResult& hit)
 {
-	if (OtherActor->ActorHasTag("PlayerProjectile"))
-		SetActivated(false);
+
 }
 
 float AST_Enemy::GetAccessibleDistanceToPlayer() const
@@ -64,8 +57,6 @@ float AST_Enemy::GetAccessibleDistanceToPlayer() const
 void AST_Enemy::BeginPlay()
 {
 	Super::BeginPlay();
-
-	SpawnDefaultController();
 
 	SetActivated(false);
 

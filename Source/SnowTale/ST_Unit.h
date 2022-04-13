@@ -36,6 +36,9 @@ public:
 	FST_Status GetBaseStatus() const;
 	FST_Status GetCurrentStatus() const;
 
+	UFUNCTION(BlueprintCallable)
+		float GetHPRatio() const;
+
 	bool GetActivated() const;
 	void SetActivated(bool Activated);
 
@@ -52,6 +55,9 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "AttackSystem")
 		TSubclassOf<class AST_AttackSystem> AttackSystemClass;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "UI")
+		class UWidgetComponent* HPBarWidget;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
 		FST_Status BaseStatus;

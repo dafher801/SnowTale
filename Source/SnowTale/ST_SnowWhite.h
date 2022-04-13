@@ -13,6 +13,10 @@ class SNOWTALE_API AST_SnowWhite : public AST_Unit
 
 public:
 
+	AST_SnowWhite();
+
+public:
+
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void LookAtTarget(FVector TargetLocation = FVector::ZeroVector) override;
@@ -42,6 +46,12 @@ protected:
 protected:
 
 	TArray<TArray<class AST_Item*>> ItemArray;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Camera")
+		class USpringArmComponent* SpringArm;
+
+	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Camera")
+		class UCameraComponent* Camera;
 
 	float CurrentForwardValue;
 	float CurrentRightValue;
