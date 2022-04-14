@@ -27,9 +27,19 @@ public:
 	virtual void Attack() override;
 	virtual void ExitAttack() override;
 
+	void Invincible();
+
 	void AcquireItem(class AST_Item* Item);
 
 	void Heal(FKey Key);
+
+	void ActiveInvincible();
+	void DeactiveInvincible();
+
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent,
+		class AController* EventInstigator, AActor* DamageCauser) override;
 
 	void InputForward(float NewForwardValue);
 	void InputRight(float NewRightValue);
@@ -37,7 +47,8 @@ public:
 	void PressedLeftMouse(FKey Key);
 	void ReleasedLeftMouse(FKey Key);
 
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void PressedRightMouse(FKey Key);
+	void ReleasedRightMouse(FKey Key);
 
 protected:
 
@@ -52,6 +63,12 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, VisibleAnywhere, Category = "Camera")
 		class UCameraComponent* Camera;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "MP Amount")
+		float InvincibeMPConsumptionPerTick;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "MP Amount")
+		float MPRecoveryAmountPerTick;
 
 	float CurrentForwardValue;
 	float CurrentRightValue;

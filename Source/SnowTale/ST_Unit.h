@@ -36,9 +36,6 @@ public:
 	FST_Status GetBaseStatus() const;
 	FST_Status GetCurrentStatus() const;
 
-	UFUNCTION(BlueprintCallable)
-		float GetHPRatio() const;
-
 	bool GetActivated() const;
 	void SetActivated(bool Activated);
 
@@ -75,5 +72,7 @@ protected:
 	bool bActivated;
 
 	bool bAttacking;
+
+	bool bInvincible;
 
 };

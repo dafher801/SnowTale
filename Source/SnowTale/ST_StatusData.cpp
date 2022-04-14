@@ -3,6 +3,7 @@
 
 FST_Status::FST_Status()
 	: HP(0.0f)
+	, MP(0.0f)
 	, ATK(0.0f)
 	, AttackSpeed(0.0f)
 	, DEF(0.0f)
@@ -12,6 +13,7 @@ FST_Status::FST_Status()
 FST_Status& FST_Status::operator=(const FST_Status& StatusParam)
 {
 	HP = StatusParam.HP;
+	MP = StatusParam.MP;
 	ATK = StatusParam.ATK;
 	AttackSpeed = StatusParam.AttackSpeed;
 	DEF = StatusParam.DEF;
@@ -26,6 +28,7 @@ FST_Status FST_Status::operator+(const FST_Status& StatusParam) const
 	FST_Status Status = StatusParam;
 
 	Status.HP += HP;
+	Status.MP += MP;
 	Status.ATK += ATK;
 	Status.AttackSpeed += AttackSpeed;
 	Status.DEF += DEF;
@@ -40,6 +43,7 @@ FST_Status FST_Status::operator-(const FST_Status& StatusParam) const
 	FST_Status Status = StatusParam;
 
 	Status.HP -= HP;
+	Status.MP -= MP;
 	Status.ATK -= ATK;
 	Status.AttackSpeed -= AttackSpeed;
 	Status.DEF -= DEF;
@@ -54,6 +58,7 @@ FST_Status FST_Status::operator*(float Ratio) const
 	FST_Status Status = *this;
 
 	Status.HP = HP * Ratio;
+	Status.MP = MP * Ratio;
 	Status.ATK = ATK * Ratio;
 	Status.AttackSpeed = AttackSpeed * Ratio;
 	Status.DEF = DEF * Ratio;
@@ -68,6 +73,7 @@ FST_Status FST_Status::operator/(float Ratio) const
 	FST_Status Status = *this;
 
 	Status.HP = HP / Ratio;
+	Status.MP = MP / Ratio;
 	Status.ATK = ATK / Ratio;
 	Status.AttackSpeed = AttackSpeed / Ratio;
 	Status.DEF = DEF / Ratio;

@@ -24,7 +24,16 @@ void AST_SnowWhite::Tick(float DeltaTime)
 
 	LookAtTarget();
 	Move();
-	BeginAttack();
+
+	if (bInvincible)
+		Invincible();
+	else
+	{
+		BeginAttack();
+
+		if (CurrentStatus.MP < BaseStatus.MP)
+			CurrentStatus.MP += MPRecoveryAmountPerTick;
+	}
 }
 
 void AST_SnowWhite::LookAtTarget(FVector TargetLocation)
@@ -68,6 +77,14 @@ void AST_SnowWhite::ExitAttack()
 	Super::ExitAttack();
 }
 
+void AST_SnowWhite::Invincible()
+{
+	if (CurrentStatus.MP >= InvincibeMPConsumptionPerTick)
+		CurrentStatus.MP -= InvincibeMPConsumptionPerTick;
+	else
+		bInvincible = false;
+}
+
 void AST_SnowWhite::AcquireItem(AST_Item* Item)
 {
 	ItemArray[static_cast<int>(Item->GetItemType())].Push(Item);
@@ -81,6 +98,16 @@ void AST_SnowWhite::Heal(FKey Key)
 	{
 		Cast<AST_HealItem>(ItemArray[HealType].Pop())->Heal(BaseStatus.HP, CurrentStatus.HP);
 	}
+}
+
+void AST_SnowWhite::ActiveInvincible()
+{
+	bInvincible = true;
+}
+
+void AST_SnowWhite::DeactiveInvincible()
+{
+	bInvincible = false;
 }
 
 void AST_SnowWhite::InputForward(float NewForwardValue)
@@ -103,6 +130,16 @@ void AST_SnowWhite::ReleasedLeftMouse(FKey Key)
 	bPressedLeftMouse = false;
 }
 
+void AST_SnowWhite::PressedRightMouse(FKey Key)
+{
+	ActiveInvincible();
+}
+
+void AST_SnowWhite::ReleasedRightMouse(FKey Key)
+{
+	DeactiveInvincible();
+}
+
 void AST_SnowWhite::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -114,6 +151,21 @@ void AST_SnowWhite::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	InputComponent->BindAction("Attack", IE_Released, this, &AST_SnowWhite::ReleasedLeftMouse);
 
 	InputComponent->BindAction("UseHeal", IE_Pressed, this, &AST_SnowWhite::Heal);
+
+	InputComponent->BindAction("Invincibility", IE_Pressed, this, &AST_SnowWhite::PressedRightMouse);
+	InputComponent->BindAction("Invincibility", IE_Released, this, &AST_SnowWhite::ReleasedRightMouse);
+}
+
+float AST_SnowWhite::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	if (bInvincible)
+	{
+		UE_LOG(LogTemp, Log, TEXT("No Damage"));
+		return 0.0f;
+	}
+
+	UE_LOG(LogTemp, Log, TEXT("Damage"));
+	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 
 void AST_SnowWhite::BeginPlay()

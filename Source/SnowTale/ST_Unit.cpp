@@ -10,6 +10,7 @@
 
 AST_Unit::AST_Unit()
 	: bAttacking(false)
+	, bInvincible(false)
 {
  	PrimaryActorTick.bCanEverTick = true;
 
@@ -100,8 +101,6 @@ float AST_Unit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, 
 		SetActivated(false);
 	}
 
-	UE_LOG(LogTemp, Log, TEXT("%f"), CurrentStatus.HP);
-
 	return DamageAmount;
 }
 
@@ -113,11 +112,6 @@ FST_Status AST_Unit::GetBaseStatus() const
 FST_Status AST_Unit::GetCurrentStatus() const
 {
 	return CurrentStatus;
-}
-
-float AST_Unit::GetHPRatio() const
-{
-	return CurrentStatus.HP / BaseStatus.HP;
 }
 
 bool AST_Unit::GetActivated() const

@@ -12,10 +12,17 @@ class SNOWTALE_API UST_UnitWidget : public UUserWidget
 
 public:
 
-	void BindUnit(class AST_Unit* Unit);
+	UST_UnitWidget(const FObjectInitializer& ObjectInitializer);
+
+public:
 
 	UFUNCTION(BlueprintCallable)
 		float GetHPRatio() const;
+
+	UFUNCTION(BlueprintCallable)
+		float GetMPRatio() const;
+
+	void BindUnit(class AST_Unit* Unit);
 
 protected:
 

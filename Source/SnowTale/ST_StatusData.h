@@ -41,6 +41,9 @@ public:
 		float HP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status")
+		float MP;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status")
 		float ATK;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Status")
