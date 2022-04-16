@@ -14,8 +14,8 @@ AST_Unit::AST_Unit()
 {
  	PrimaryActorTick.bCanEverTick = true;
 
-	HPBarWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("HPBarWidget"));
-	HPBarWidget->SetupAttachment(GetMesh());
+	UnitWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("UnitWidget"));
+	UnitWidget->SetupAttachment(GetMesh());
 }
 
 void AST_Unit::Tick(float DeltaTime)
@@ -114,6 +114,16 @@ FST_Status AST_Unit::GetCurrentStatus() const
 	return CurrentStatus;
 }
 
+float AST_Unit::GetHPRatio() const
+{
+	return CurrentStatus.HP / BaseStatus.HP;
+}
+
+float AST_Unit::GetMPRatio() const
+{
+	return CurrentStatus.MP / BaseStatus.MP;
+}
+
 bool AST_Unit::GetActivated() const
 {
 	return bActivated;
@@ -149,8 +159,8 @@ void AST_Unit::BeginPlay()
 
 	AttackSystem = GetWorld()->SpawnActor<AST_AttackSystem>(AttackSystemClass, SpawnParameters);
 	
-	if (IsValid(HPBarWidget->GetWidget()))
-		Cast<UST_UnitWidget>(HPBarWidget->GetWidget())->BindUnit(this);
+	if (IsValid(UnitWidget->GetWidget()))
+		Cast<UST_UnitWidget>(UnitWidget->GetWidget())->BindUnit(this);
 
 	CurrentStatus = BaseStatus;
 	GetCharacterMovement()->MaxWalkSpeed = CurrentStatus.MoveSpeed;

@@ -1,7 +1,9 @@
 
 #include "ST_SnowWhite.h"
 #include "ST_HealItem.h"
+#include "ST_PlayerWidget.h"
 #include "Kismet/GameplayStatics.h"
+#include "Components/WidgetComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -85,19 +87,20 @@ void AST_SnowWhite::Invincible()
 		bInvincible = false;
 }
 
-void AST_SnowWhite::AcquireItem(AST_Item* Item)
+void AST_SnowWhite::AcquireHealItem(AST_HealItem* HealItem)
 {
-	ItemArray[static_cast<int>(Item->GetItemType())].Push(Item);
+	AcquireHealItemDelegate.Execute();
+	HealItemArray.Push(HealItem);
 }
 
-void AST_SnowWhite::Heal(FKey Key)
+void AST_SnowWhite::UseHealItem(FKey Key)
 {
-	int HealType = static_cast<int>(EST_ItemType::HEAL);
-
-	if (ItemArray[HealType].Num() > 0)
+	if (HealItemArray.Num() > 0)
 	{
-		Cast<AST_HealItem>(ItemArray[HealType].Pop())->Heal(BaseStatus.HP, CurrentStatus.HP);
+		HealItemArray.Pop()->Heal(BaseStatus.HP, CurrentStatus.HP);
 	}
+
+	UseHealItemDelegate.Execute();
 }
 
 void AST_SnowWhite::ActiveInvincible()
@@ -150,7 +153,7 @@ void AST_SnowWhite::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	InputComponent->BindAction("Attack", IE_Pressed, this, &AST_SnowWhite::PressedLeftMouse);
 	InputComponent->BindAction("Attack", IE_Released, this, &AST_SnowWhite::ReleasedLeftMouse);
 
-	InputComponent->BindAction("UseHeal", IE_Pressed, this, &AST_SnowWhite::Heal);
+	InputComponent->BindAction("UseHeal", IE_Pressed, this, &AST_SnowWhite::UseHealItem);
 
 	InputComponent->BindAction("Invincibility", IE_Pressed, this, &AST_SnowWhite::PressedRightMouse);
 	InputComponent->BindAction("Invincibility", IE_Released, this, &AST_SnowWhite::ReleasedRightMouse);
@@ -158,25 +161,12 @@ void AST_SnowWhite::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 float AST_SnowWhite::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	if (bInvincible)
-	{
-		UE_LOG(LogTemp, Log, TEXT("No Damage"));
-		return 0.0f;
-	}
-
-	UE_LOG(LogTemp, Log, TEXT("Damage"));
-	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	return bInvincible ? 0.0f : Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 
 void AST_SnowWhite::BeginPlay()
 {
 	Super::BeginPlay();
-
-	for (int ItemType = static_cast<int>(EST_ItemType::BEGIN);
-		ItemType < static_cast<int>(EST_ItemType::END); ItemType++)
-	{
-		ItemArray.Add(TArray<AST_Item*>());
-	}
 
 	SetActivated(true);
 }

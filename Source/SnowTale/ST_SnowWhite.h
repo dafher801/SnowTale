@@ -6,6 +6,9 @@
 #include "Containers/Array.h"
 #include "ST_SnowWhite.generated.h"
 
+DECLARE_DYNAMIC_DELEGATE(FAcquireHealItemDelegate);
+DECLARE_DYNAMIC_DELEGATE(FUseHealItemDelegate);
+
 UCLASS()
 class SNOWTALE_API AST_SnowWhite : public AST_Unit
 {
@@ -29,9 +32,9 @@ public:
 
 	void Invincible();
 
-	void AcquireItem(class AST_Item* Item);
+	void AcquireHealItem(class AST_HealItem* HealItem);
 
-	void Heal(FKey Key);
+	void UseHealItem(FKey Key);
 
 	void ActiveInvincible();
 	void DeactiveInvincible();
@@ -54,9 +57,18 @@ protected:
 
 	virtual void BeginPlay() override;
 
+public:
+
+	UPROPERTY(BlueprintReadWrite)
+		FAcquireHealItemDelegate AcquireHealItemDelegate;
+
+	UPROPERTY(BlueprintReadWrite)
+		FUseHealItemDelegate UseHealItemDelegate;
+
 protected:
 
-	TArray<TArray<class AST_Item*>> ItemArray;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Item")
+		TArray<class AST_HealItem*> HealItemArray;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Camera")
 		class USpringArmComponent* SpringArm;

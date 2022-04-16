@@ -11,6 +11,13 @@ AST_HealItem::AST_HealItem()
 void AST_HealItem::Interact(class AActor* OtherActor)
 {
 	Super::Interact(OtherActor);
+
+	if (OtherActor->ActorHasTag("Player"))
+	{
+		Owner = Cast<AST_SnowWhite>(OtherActor);
+		Owner->AcquireHealItem(this);
+		SetActivated(false);
+	}
 }
 
 void AST_HealItem::Heal(float& BaseHP, float& CurrentHP)
