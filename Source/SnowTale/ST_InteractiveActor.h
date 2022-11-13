@@ -18,6 +18,7 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 
+	// 플레이어와 Overlap시 호출
 	virtual void Interact(class AActor* OtherActor);
 
 	UFUNCTION()
@@ -39,6 +40,9 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Mesh")
 		class UStaticMeshComponent* Mesh;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Sound")
+		class USoundWave* InteractSound;
 
 	bool bActivated;
 

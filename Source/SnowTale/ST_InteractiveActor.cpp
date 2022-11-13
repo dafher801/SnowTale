@@ -1,5 +1,6 @@
 
 #include "ST_InteractiveActor.h"
+#include "Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 
@@ -18,12 +19,16 @@ AST_InteractiveActor::AST_InteractiveActor()
 
 void AST_InteractiveActor::Tick(float DeltaTime)
 {
+	if (!bActivated)
+		return;
+
 	Super::Tick(DeltaTime);
 }
 
 void AST_InteractiveActor::Interact(class AActor* OtherActor)
 {
-
+	if (IsValid(InteractSound))
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), InteractSound, GetActorLocation());
 }
 
 void AST_InteractiveActor::OnOverlapBegin(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& Result)
@@ -48,6 +53,8 @@ void AST_InteractiveActor::SetActivated(bool Activated)
 void AST_InteractiveActor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	SetActivated(true);
 
 	BoxOverlap->OnComponentBeginOverlap.AddDynamic(this, &AST_InteractiveActor::OnOverlapBegin);
 }

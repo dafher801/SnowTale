@@ -12,13 +12,15 @@ class SNOWTALE_API AST_LongRangeAttackSystem : public AST_AttackSystem
 
 public:
 
-	AST_LongRangeAttackSystem();
-
-public:
-
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void Attack() override;
+
+	virtual void SetOwner(AActor* NewOwner) override;
+
+	void SetSpawnLocation(FVector Location);
+
+	void SetSpawnRotation(FRotator Rotation);
 
 protected:
 

@@ -16,27 +16,60 @@ public:
 
 public:
 
+	virtual void NativeBeginPlay() override;
+
 	virtual void NativeUpdateAnimation(float DeltaTime) override;
 
-	void PlayAttackMontage();
+	virtual void PlayMontage(class UAnimMontage* Montage, float PlayRate = 1.0f);
+
+	void PlayAttackStartMontage(float AttackSpeed);
+	void PlayAttackExitMontage(float AttackSpeed);
+
+	void PlayDeadMontage();
+
+	void DeactiveUnit();
 
 protected:
 
 	UFUNCTION()
-		void AnimNotify_Attack();
+		virtual void AnimNotify_StartAttack();
 
 	UFUNCTION()
-		void AnimNotify_ExitAttack();
+		virtual void AnimNotify_LoopAttack();
+
+	UFUNCTION()
+		virtual void AnimNotify_ExitAttack();
+
+	UFUNCTION()
+		void AnimNotify_Dead();
+
+	UFUNCTION()
+		void AnimNotify_Disappear();
 
 protected:
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Attack")
-		class UAnimMontage* AttackMontage;
+	UPROPERTY()
+		class AST_Unit* Unit;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Anim")
+		class UAnimMontage* AttackStartMontage;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Anim")
+		class UAnimMontage* AttackLoopMontage;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Anim")
+		class UAnimMontage* AttackEndMontage;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Anim")
+		class UAnimMontage* DeadMontage;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Move")
 		float CurrentMoveSpeed;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Move")
 		bool bMoving;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Dead")
+		float DeadTime;
 
 };

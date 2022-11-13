@@ -6,8 +6,8 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/ArrowComponent.h"
+#include "Particles/ParticleSystemComponent.h"
 #include "GameFramework/ProjectileMovementComponent.h"
-#include "Particles/ParticleSystem.h"
 
 AST_Projectile::AST_Projectile()
 {
@@ -15,6 +15,7 @@ AST_Projectile::AST_Projectile()
 
 	CapsuleCollision = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Capsule"));
 	CapsuleCollision->SetConstraintMode(EDOFMode::Type::XYPlane);
+	CapsuleCollision->GetBodyInstance()->MassScale = 0.0f;
 	RootComponent = CapsuleCollision;
 
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
@@ -23,16 +24,17 @@ AST_Projectile::AST_Projectile()
 	Direction = CreateDefaultSubobject<UArrowComponent>(TEXT("Direction"));
 	Direction->SetupAttachment(RootComponent);
 
+	Particle = CreateDefaultSubobject<UParticleSystemComponent>(TEXT("Particle"));
+	Particle->SetupAttachment(RootComponent);
+
 	Movement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("Movement"));
 	Movement->ProjectileGravityScale = 0.0f;
-
-	SetActivated(false);
 }
 
 void AST_Projectile::Init(FVector SpawnLocation, FRotator SpawnRotation)
 {
 	SetActorLocation(SpawnLocation);
-	SetActorRotation(SpawnRotation);
+	SetActorRotation(SpawnRotation + RotationRevisionCalculation);
 
 	Damage = Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().ATK;
 
@@ -40,9 +42,13 @@ void AST_Projectile::Init(FVector SpawnLocation, FRotator SpawnRotation)
 
 	CurrentMovementDistance = 0.0f;
 
-	Movement->Velocity = SpawnRotation.Vector() * Movement->MaxSpeed;
+	Movement->Velocity = GetActorRotation().Vector() * Movement->MaxSpeed;
+	Movement->Velocity.Z = 0.0f;
 
 	SetActivated(true);
+
+	if (IsValid(ProjectileInitSound))
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), ProjectileInitSound, GetActorLocation());
 }
 
 void AST_Projectile::Tick(float DeltaTime)
@@ -56,20 +62,23 @@ void AST_Projectile::Tick(float DeltaTime)
 		SetActivated(false);
 }
 
-void AST_Projectile::OnHit(UPrimitiveComponent* OtherComp, AActor* OtherActor, UPrimitiveComponent* Other, FVector NormalImpulse, const FHitResult& hit)
+void AST_Projectile::OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit)
 {
 	Damage = Cast<AST_Unit>(GetInstigator())->GetCurrentStatus().ATK;
 
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), 
-		AttackParticleSystem, GetActorLocation(), GetActorRotation());
+	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(),
+		OnHitParticleSystem, GetActorLocation(), GetActorRotation());
 
-	UGameplayStatics::ApplyDamage(OtherActor, Damage,
-		UGameplayStatics::GetPlayerController(GetWorld(), 0), this, NULL);
+	UGameplayStatics::ApplyDamage(OtherActor, Damage, 
+		Cast<AST_Unit>(GetInstigator())->GetController(), this, NULL);
 
 	SetActivated(false);
+
+	if (IsValid(ProjectileOnHitSound))
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), ProjectileOnHitSound, GetActorLocation());
 }
 
-bool AST_Projectile::GetActivated() const
+bool AST_Projectile::IsActivated() const
 {
 	return bActivated;
 }
@@ -77,11 +86,13 @@ bool AST_Projectile::GetActivated() const
 void AST_Projectile::SetActivated(bool Activated)
 {
 	bActivated = Activated;
-	Movement->SetActive(bActivated);
 
 	SetActorHiddenInGame(!bActivated);
 	SetActorTickEnabled(bActivated);
 	SetActorEnableCollision(bActivated);
+
+	Particle->SetActive(bActivated);
+	Movement->SetActive(bActivated);
 }
 
 UProjectileMovementComponent* AST_Projectile::GetMovement() const
@@ -92,6 +103,8 @@ UProjectileMovementComponent* AST_Projectile::GetMovement() const
 void AST_Projectile::BeginPlay()
 {
 	Super::BeginPlay();
+
+	SetActivated(false);
 
 	CapsuleCollision->OnComponentHit.AddDynamic(this, &AST_Projectile::OnHit);
 }

@@ -2,6 +2,7 @@
 #include "ST_HealItem.h"
 #include "ST_SnowWhite.h"
 #include "ST_StatusData.h"
+#include "Kismet/GameplayStatics.h"
 
 AST_HealItem::AST_HealItem()
 {
@@ -22,6 +23,9 @@ void AST_HealItem::Interact(class AActor* OtherActor)
 
 void AST_HealItem::Heal(float& BaseHP, float& CurrentHP)
 {
+	if (IsValid(HealSound))
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), HealSound, GetActorLocation());
+
 	CurrentHP += HealAmount;
 
 	if (BaseHP < CurrentHP)

@@ -12,21 +12,30 @@ class SNOWTALE_API AST_Enemy : public AST_Unit
 
 public:
 
+	AST_Enemy();
+
+public:
+
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void LookAtTarget(FVector TargetLocation) override;
 
 	virtual void Move(FVector TargetLocation) override;
+	void ExitMove();
 	
 	virtual void BeginAttack() override;
 	virtual void Attack() override;
 	virtual void ExitAttack() override;
 
-	UFUNCTION() 
-		virtual void OnHit(class UPrimitiveComponent* OtherComp, class AActor* OtherActor,
-			class UPrimitiveComponent* Other, FVector NormalImpulse, const FHitResult& hit);
-
 	float GetAccessibleDistanceToPlayer() const;
+
+	bool IsVisibleFromPlayer() const;
+
+	bool IsAccessible() const;
+
+	void SetEnemySpawner(class AST_EnemySpawner* Spawner);
+
+	virtual void SetDead(bool Dead) override;
 
 protected:
 
@@ -35,7 +44,13 @@ protected:
 protected:
 
 	UPROPERTY()
+		class ACharacter* Player;
+
+	UPROPERTY()
 		class UNavigationSystemV1* NavSystem;
+
+	UPROPERTY()
+		class AST_EnemySpawner* EnemySpawner;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Status")
 		float AccessibleDistanceToPlayer;

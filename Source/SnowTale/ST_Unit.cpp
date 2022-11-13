@@ -10,7 +10,8 @@
 
 AST_Unit::AST_Unit()
 	: bAttacking(false)
-	, bInvincible(false)
+	, bDead(false)
+	, bDisappear(false)
 {
  	PrimaryActorTick.bCanEverTick = true;
 
@@ -28,58 +29,36 @@ void AST_Unit::Tick(float DeltaTime)
 	TimeElapsedSinceAttack += DeltaTime;
 }
 
-void AST_Unit::LookAtTarget(FVector TargetLocation)
+void AST_Unit::LookAtTarget(FVector VectorToTarget)
 {
-	FVector2D UnitScreenLocation;
-	FVector2D TargetScreenLocation;
+	BodyRotation = VectorToTarget.Rotation();
 
-	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-
-	if (PlayerController)
-	{
-		PlayerController->ProjectWorldLocationToScreen(GetActorLocation(), UnitScreenLocation, true);
-		PlayerController->ProjectWorldLocationToScreen(TargetLocation, TargetScreenLocation, true);
-	}
-	else
-		return;
-
-	BodyRotation = FVector(TargetScreenLocation - UnitScreenLocation, 0.0f).Rotation();
-
-	SetActorRotation(BodyRotation + RotationErrorCalculation);
-}
-
-void AST_Unit::Move(FVector TargetLocation)
-{
-	UAIBlueprintHelperLibrary::SimpleMoveToLocation(GetController(), TargetLocation);
-}
-
-void AST_Unit::ExitMove()
-{
-	UAIBlueprintHelperLibrary::SimpleMoveToLocation(GetController(), GetActorLocation());
+	SetActorRotation(BodyRotation + RotationRevisionCalculation);
 }
 
 void AST_Unit::BeginAttack()
 {
-	if (!bAttacking)
-	{
-		UST_ABP_Unit* UnitABP = Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance());
+	if (bAttacking)
+		return;
+	
+	UST_ABP_Unit* UnitABP = Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance());
 
-		bAttacking = true;
-		TimeElapsedSinceAttack = 0.0f;
+	bAttacking = true;
+	TimeElapsedSinceAttack = 0.0f;
 
-		if (UnitABP)
-			UnitABP->PlayAttackMontage();
-	}
+	if (IsValid(UnitABP))
+		UnitABP->PlayAttackStartMontage(CurrentStatus.AttackSpeed);
 }
 
 void AST_Unit::Attack()
 {
-	AttackSystem->Attack();
+	if (IsValid(AttackSystem))
+		AttackSystem->Attack();
 }
 
 void AST_Unit::ExitAttack()
 {
-	bAttacking = false;
+	DeactiveAttackAnim();
 }
 
 void AST_Unit::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -98,10 +77,18 @@ float AST_Unit::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, 
 
 	if (CurrentStatus.HP <= 0.0f)
 	{
-		SetActivated(false);
+		UST_ABP_Unit* UnitAnim = nullptr;
+
+		if (IsValid(GetMesh()) && IsValid(GetMesh()->GetAnimInstance()))
+			UnitAnim = Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance());
+
+		if (IsValid(UnitAnim))
+			Cast<UST_ABP_Unit>(GetMesh()->GetAnimInstance())->PlayDeadMontage();
+		else
+			SetActivated(false);
 	}
 
-	return DamageAmount;
+	return Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 }
 
 FST_Status AST_Unit::GetBaseStatus() const
@@ -124,7 +111,7 @@ float AST_Unit::GetMPRatio() const
 	return CurrentStatus.MP / BaseStatus.MP;
 }
 
-bool AST_Unit::GetActivated() const
+bool AST_Unit::IsActivated() const
 {
 	return bActivated;
 }
@@ -132,7 +119,10 @@ bool AST_Unit::GetActivated() const
 void AST_Unit::SetActivated(bool Activated)
 {
 	bActivated = Activated;
-	AttackSystem->SetActivated(bActivated);
+
+	if (IsValid(AttackSystem))
+		AttackSystem->SetActivated(bActivated);
+
 	GetCharacterMovement()->SetActive(bActivated);
 
 	SetActorHiddenInGame(!bActivated);
@@ -145,19 +135,71 @@ void AST_Unit::SetActivated(bool Activated)
 		DetachFromControllerPendingDestroy();
 }
 
+bool AST_Unit::IsStartingAttack() const
+{
+	return bStartingAttack;
+}
+
+void AST_Unit::ActiveStartingAttack()
+{
+	bStartingAttack = true;
+	bAttacking = false;
+	bEndingAttack = false;
+}
+
 bool AST_Unit::IsAttacking() const
 {
 	return bAttacking;
+}
+
+void AST_Unit::ActiveAttacking()
+{
+	bStartingAttack = false;
+	bAttacking = true;
+	bEndingAttack = false;
+}
+
+bool AST_Unit::IsEndingAttack() const
+{
+	return bEndingAttack;
+}
+
+void AST_Unit::ActiveEndingAttack()
+{
+	bStartingAttack = false;
+	bAttacking = false;
+	bEndingAttack = true;
+}
+
+void AST_Unit::DeactiveAttackAnim()
+{
+	bStartingAttack = false;
+	bAttacking = false;
+	bEndingAttack = false;
+}
+
+bool AST_Unit::IsDead() const
+{
+	return bDead;
+}
+
+void AST_Unit::SetDead(bool Dead)
+{
+	bDead = Dead;
+
+	SetActorEnableCollision(!Dead);
+	GetCharacterMovement()->SetActive(!Dead);
 }
 
 void AST_Unit::BeginPlay()
 {
 	Super::BeginPlay();
 
-	FActorSpawnParameters SpawnParameters;
-	SpawnParameters.Owner = this;
-
-	AttackSystem = GetWorld()->SpawnActor<AST_AttackSystem>(AttackSystemClass, SpawnParameters);
+	if (IsValid(AttackSystemClass))
+	{
+		AttackSystem = GetWorld()->SpawnActor<AST_AttackSystem>(AttackSystemClass);
+		AttackSystem->SetOwner(this);
+	}
 	
 	if (IsValid(UnitWidget->GetWidget()))
 		Cast<UST_UnitWidget>(UnitWidget->GetWidget())->BindUnit(this);

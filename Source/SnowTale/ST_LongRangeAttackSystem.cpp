@@ -2,10 +2,6 @@
 #include "ST_LongRangeAttackSystem.h"
 #include "ST_Projectile.h"
 
-AST_LongRangeAttackSystem::AST_LongRangeAttackSystem()
-	: SpawnLocation(FVector::ZeroVector)
-	, SpawnRotation(FRotator::ZeroRotator) {}
-
 void AST_LongRangeAttackSystem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -21,24 +17,46 @@ void AST_LongRangeAttackSystem::Attack()
 
 	for (int i = CurrentProjectileNum++; i < MaxProjectileNum; i++)
 	{
-		if (!ProjectileArray[i]->GetActivated())
+		if (!ProjectileArray[i]->IsActivated())
 		{
+			// 발사체를 생성함
 			ProjectileArray[i]->Init(SpawnLocation, SpawnRotation);
 			return;
 		}
 	}
 }
 
+void AST_LongRangeAttackSystem::SetOwner(AActor* NewOwner)
+{
+	Super::SetOwner(NewOwner);
+
+	for (int i = 0; i < ProjectileArray.Num(); i++)
+	{
+		ProjectileArray[i]->SetInstigator(Cast<APawn>(GetOwner()));
+		ProjectileArray[i]->SetOwner(this);
+	}
+}
+
+void AST_LongRangeAttackSystem::SetSpawnLocation(FVector Location)
+{
+	SpawnLocation = Location;
+}
+
+void AST_LongRangeAttackSystem::SetSpawnRotation(FRotator Rotation)
+{
+	SpawnRotation = Rotation;
+}
+
 void AST_LongRangeAttackSystem::BeginPlay()
 {
 	Super::BeginPlay();
 
-	FActorSpawnParameters SpawnParameters;
-	SpawnParameters.Instigator = Cast<class APawn>(GetOwner());
-	SpawnParameters.Owner = this;
-
-	for (int i = 0; i < MaxProjectileNum; i++)
+	if (IsValid(ProjectileClass))
 	{
-		ProjectileArray.Add(GetWorld()->SpawnActor<AST_Projectile>(ProjectileClass, SpawnParameters));
+		for (int i = 0; i < MaxProjectileNum; i++)
+			ProjectileArray.Add(GetWorld()->SpawnActor<AST_Projectile>(ProjectileClass));
 	}
+
+	SpawnLocation = GetActorLocation();
+	SpawnRotation = GetActorRotation();
 }

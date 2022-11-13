@@ -33,7 +33,7 @@ void UST_UpdateBlackboardService::UpdatePlayerLocation(UBehaviorTreeComponent& O
 
 void UST_UpdateBlackboardService::UpdateVisibleFromTarget(UBehaviorTreeComponent& OwnerComp)
 {
-	if (!Owner->GetActivated())
+	if (!Owner->IsActivated())
 		return;
 
 	FHitResult HitResult;
@@ -49,7 +49,7 @@ void UST_UpdateBlackboardService::UpdateVisibleFromTarget(UBehaviorTreeComponent
 
 void UST_UpdateBlackboardService::UpdateMovable(UBehaviorTreeComponent& OwnerComp)
 {
-	bMovable = Owner->GetActivated() && (!bVisibleFromTarget || 
+	bMovable = Owner->IsActivated() && (!bVisibleFromTarget || 
 		Owner->GetAccessibleDistanceToPlayer() < FVector::Distance(Owner->GetActorLocation(), PlayerLocation));
 
 	OwnerComp.GetBlackboardComponent()->SetValueAsBool(AST_EnemyController::MovableKey, bMovable);
@@ -57,7 +57,7 @@ void UST_UpdateBlackboardService::UpdateMovable(UBehaviorTreeComponent& OwnerCom
 
 void UST_UpdateBlackboardService::UpdateAssailable(UBehaviorTreeComponent& OwnerComp)
 {
-	bAssailable = Owner->GetActivated() && bVisibleFromTarget;
+	bAssailable = Owner->IsActivated() && bVisibleFromTarget;
 
 	OwnerComp.GetBlackboardComponent()->SetValueAsBool(AST_EnemyController::AssailableKey, bAssailable);
 }

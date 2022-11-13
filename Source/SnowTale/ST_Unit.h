@@ -15,23 +15,31 @@ public:
 
 	AST_Unit();
 
-public:	
+public:
 
+	// 각 유닛들이 매 프레임마다 실행되는 로직
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void LookAtTarget(FVector TargetLocation);
+	// 각 유닛들이 타겟을 바라보는 로직
+	virtual void LookAtTarget(FVector VectorToTarget);
 
-	virtual void Move(FVector TargetLocation);
-	void ExitMove();
+	// 각 유닛들이 움직이는 로직
+	virtual void Move(FVector TargetLocation) {}
 
+	// 각 유닛들의 공격 모션이 시작할 때
 	virtual void BeginAttack();
+
+	// 각 유닛들의 AttackSystem에 공격을 요청할 때
 	virtual void Attack();
+
+	// 각 유닛들의 공격 모션이 끝날 때
 	virtual void ExitAttack();
 
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
+	// 각 유닛들이 데미지를 받을 때
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent,
 		class AController* EventInstigator, AActor* DamageCauser) override;
+
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	FST_Status GetBaseStatus() const;
 	FST_Status GetCurrentStatus() const;
@@ -42,10 +50,22 @@ public:
 	UFUNCTION(BlueprintCallable)
 		float GetMPRatio() const;
 
-	bool GetActivated() const;
+	bool IsActivated() const;
 	void SetActivated(bool Activated);
 
+	bool IsStartingAttack() const;
+	void ActiveStartingAttack();
+
 	bool IsAttacking() const;
+	void ActiveAttacking();
+
+	bool IsEndingAttack() const;
+	void ActiveEndingAttack();
+
+	void DeactiveAttackAnim();
+
+	bool IsDead() const;
+	virtual void SetDead(bool Dead);
 
 protected:
 
@@ -69,7 +89,13 @@ protected:
 		FST_Status CurrentStatus;
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Calculation")
-		FRotator RotationErrorCalculation;
+		FRotator RotationRevisionCalculation;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "AttackAnim")
+		float StartingAttackTime;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "AttackAnim")
+		float EndingAttackTime;
 
 	FRotator BodyRotation;
 
@@ -77,8 +103,18 @@ protected:
 
 	bool bActivated;
 
-	bool bAttacking;
+	UPROPERTY(BlueprintReadWrite)
+		bool bStartingAttack;
 
-	bool bInvincible;
+	UPROPERTY(BlueprintReadWrite)
+		bool bAttacking;
+
+	UPROPERTY(BlueprintReadWrite)
+		bool bEndingAttack;
+
+	UPROPERTY(BlueprintReadWrite)
+		bool bDead;
+
+	bool bDisappear;
 
 };

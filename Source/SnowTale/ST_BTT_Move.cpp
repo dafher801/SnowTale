@@ -31,7 +31,7 @@ void UST_BTT_Move::TickTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory
 	{
 		AI->ExitMove();
 
-		FinishLatentTask(OwnerComp, EBTNodeResult::Aborted);
+		FinishLatentTask(OwnerComp, EBTNodeResult::Failed);
 	}
 
 	FVector TargetPosition = OwnerComp.GetBlackboardComponent()->GetValueAsVector(AST_EnemyController::TargetPosKey);

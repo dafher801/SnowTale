@@ -14,7 +14,7 @@ void AST_Item::Tick(float DeltaTime)
 
 void AST_Item::Interact(AActor* OtherActor)
 {
-	
+	Super::Interact(OtherActor);
 }
 
 void AST_Item::UseItem()

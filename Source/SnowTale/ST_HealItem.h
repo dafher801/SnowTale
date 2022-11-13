@@ -26,5 +26,8 @@ protected:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Item")
 		float HealAmount;
+
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Sound")
+		class USoundWave* HealSound;
 	
 };
